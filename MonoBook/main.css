@@ -20,6 +20,8 @@
 		float: right;
 		margin:  0 0 0.6em 0em;
 		padding: 0px;
+		min-height: 1050px;
+
 	/*SITE SUBTITLES*/
 	}
 	#catlinks {
@@ -47,6 +49,7 @@
 	}
 
 	h2 {
+		color: white !important;
 		display: block;
 		font-size: 1.5em;
 		-webkit-margin-before: 0.83em;
@@ -75,7 +78,8 @@
     z-index: 2;
     background: #1C1C1C;
     color: #FFFFFF;
-    line-height: 1.5em;
+	line-height: 1.5em;
+	margin-top: 111px;
 		
 	}
 	
@@ -136,6 +140,7 @@
 		position: relative;
 		z-index: 0;
 		background: #1C1C1C;
+		display: flow-root;
 		
 		
 	}
@@ -150,7 +155,12 @@
 		color:#FFA50B;
 	
 	}
-	a:hover {color: #FFA50B;
+
+	.mw-body-content a.external:visited {
+		color: #FFA50B;
+	}
+
+	a:hover {color: white;
 	}
 	
 	a:active {color: #FFA50B;
@@ -180,7 +190,7 @@
 	}
 	
 	.firstHeading {
-		margin-bottom: 1.5em;
+		margin-bottom: 2em;
 		line-height: 1.3em;
 		padding-bottom: 0;
 	}
@@ -284,7 +294,7 @@
 	.pBody {
 		font-size: 95%;
 	/*	background-color: #313131;*/
-		/*THIS CHANGES THE POSITION OF MAIN PAGE - DISUSSION - ETC BUTTONS top buttons*/
+		
 		color: #ddd;
 		border-collapse: collapse;
 		list-style-type:none;
@@ -297,7 +307,6 @@
 /*edit the search title */
 	label {
 		cursor: default;
-		visibility: hidden;
 		
 	}
 	/*------------*/
@@ -348,10 +357,8 @@
 	#p-logo a,
 	#p-logo a:hover {
 		display: block;
-		height: 20px;
-		width: 12.2em;
 		background-repeat: no-repeat;
-		background-position: 35% 5% !important; /* stylelint-disable-line declaration-no-important */
+		background-position: 35% 50% !important; /* stylelint-disable-line declaration-no-important */
 		text-decoration: none;
 	}
 	
@@ -502,7 +509,8 @@
 	/*
 	** the page-related actions- page/talk, edit etc
 	*/
-	/*TOP-BUTTON POSITIONS*/
+	/*THIS CHANGES THE POSITION OF MAIN PAGE - DISUSSION - ETC BUTTONS top buttons*/
+
 	#p-cactions {
 		position: absolute;
     	top: 35px;
@@ -510,8 +518,8 @@
     	white-space: nowrap;
     	overflow: inherit;
     	background: none;
-    	padding-top: 59px;
-    	padding-left: 9px;
+    	padding-top: 129px;
+    	padding-left: 10px;
 		
 	}
 	
@@ -524,10 +532,9 @@
 		display: inline;
 	/*	border: 1px solid #aaa;*/
 		border-bottom: 0;
-		padding: 0 0em 0em 0;
-		margin: 0em 0em 0 0;
 		overflow: visible;
 		background: #1C1C1C;
+		margin-left: -1.2px;
 	}
 	
 	#p-cactions li.selected {
@@ -535,6 +542,10 @@
 		font-weight: bold;
 	}
 	
+	li#ca-watch, li#ca-unwatch, li#ca-varlang-0, li#ca-print {
+		margin-left: -1.2px !important;
+	}
+
 	/*------------------------------------------------------------------*/
 	/*TAB APPEARANCE -DISCUSS,SOURCE, ETC */
 	#p-cactions li a {
@@ -553,6 +564,7 @@
 	#p-cactions li.selected a {
 		z-index: 3;
 		background-color: #272727;
+		padding-bottom: 14px;
 	
 	}
 	
@@ -634,12 +646,14 @@
 	*/
 	div#footer {
 		background-color: #2D2D2D;
-		text-align: left;
-		overflow: hidden;
-		font-size: 85%;
-		padding-top: 13px;
-		margin: 0px 0px -60px -10px;
-		width: 1295px;
+    	text-align: center;
+    	font-size: 85%;
+    	padding-top: 13px;
+    	padding-bottom: 23px;
+    	margin: 23px auto -60px auto;
+    	width: 1295px;
+		margin-left: -10px;
+		display: table-caption;
 		}
 	
 	div#footer li {
@@ -828,8 +842,8 @@
 	#column-content { margin-left: -15em; }
 	#column-content #content { margin-left: 15em; }
 	#p-logo a, #p-logo a:hover { 
-		width: 16em; 
-		height: 12em;
+		width: 15em; 
+		height: 3em;
 	}
 	#p-cactions { left: 14.5em; }
 	.portlet { width: 14em; }
@@ -861,6 +875,30 @@
     width: 380px;
 	}
 
+	/*login buttons*/
+	.mw-ui-button.mw-ui-progressive {
+		background-color: #f9930e;
+		color: white;
+		border: 1px solid #f9930e;
+		text-shadow: 0 1px rgba(0,0,0,0.1);
+	}
+
+	#mw-createaccount-join {
+		background-color: #f9930e;
+		color: white;
+		border: 1px solid #f9930e;
+		text-shadow: 0 2px rgba(0,0,0,0.1);
+	}
+
+	#mw-createaccount-cta {
+		width: 20em;
+		background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALIAAABxCAMAAABGKAlAAAABFFBMV…A5IfkDWeAzawnJebLArFHyJlmgOkoeilHyKHmUPEoeJf8KniSCvNiM46EAAAAASUVORK5CYII=) no-repeat 50%;
+		margin: 0 auto;
+		padding-top: 7.8em;
+		font-weight: bold;
+		text-align: center;
+		
+	}
 	/*this changes the color of missing page links*/
 	a.new { color : #c20 !important; }
 	/*----------------------*/
@@ -944,7 +982,26 @@
 	#preferences { /*BACKGROUND COLOR FOR MAJOR TABLE*/
 		background:#2D2D2D;
 	}
+	
+	.mw-email-not-authenticated .mw-input, .mw-email-none .mw-input {
+		border: 1px solid white;
+		
+	}
 
+	fieldset {
+		border: 1px solid white;
+		margin: 1em 0 1em 0;
+		padding: 0 1em 1em;
+	}
+
+	/*no collision with special page tab*/
+	.client-js #preftoc {
+		width: 100%;
+		clear: both;
+		margin: 10px auto 0px auto;
+		padding: 0;
+	}
+	/*--------------------------*/
 	.client-js #preftoc li {
 		background:#2D2D2D;
 		color: white;
@@ -1008,6 +1065,26 @@ textarea#wpTextbox1 { /*this edits the "editing" text box*/
 
 /*-------------upload file area settings---------------*/
 
+div#mw-content-text {
+	background: #272727;
+}
+
+.MediaTransformError {
+    background-color: red;
+    padding: 0.1em;
+}
+
+#filetoc {
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    padding: 5px;
+    font-size: 95%;
+    margin-bottom: 0.5em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
 hr {
 	margin: 20px 0 30px 0;
 	border: solid 1px #888;
@@ -1047,6 +1124,30 @@ hr {
 	
   }
 
+  /*user page formatting*/
+  #profile-title-container {
+    padding: 0 0px 8px 6px;
+    margin: 40px auto 20px auto;
+}
+
+#profile-top {
+    border-bottom: 1px solid transparent;
+    padding: 50px 0;
+    margin: 0 0 10px 0;
+    position: relative;
+}
+
+/*-------------------ADVERTISING------------------------------*/
+
+div#siteNotice.mw-body-content {
+	margin: -11.2em auto 0em auto;
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    width: 100%;
+    margin-left: -9em;
+}
+/*-------------------------------------------------*/
   /*-------------------------------------------------*/
 /*ORANGE BUTTONS*/
   table#page tr td#content div.editButtons{overflow:hidden;padding:10px 0;line-height:28px}
@@ -1057,6 +1158,109 @@ hr {
 	  overflow:hidden;
 	  line-height:28px
   }
+
+
+#profile-toggle-button {
+	background: none;
+}
+  /*this edits the orange style of listed buttons*/
+  li#pt-createaccount{
+	height:28px;
+	margin:0;
+	margin-right:10px;
+	font-weight: bold;
+	text-transform:uppercase;
+	color: #f2eaea;
+	padding:0 13px;
+	background: -moz-linear-gradient(
+	  top,
+	  #f2eaea 0%,
+	  rgba(100, 100, 100, 0.5));
+	background: -webkit-gradient(
+	  linear, left top, left bottom,
+	  from(#f2eaea),
+	  to(rgba(100, 100, 100, 0.5)));
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	border: 1px solid #000000;
+	-moz-box-shadow:
+	  0px 1px 3px rgba(000,000,000,0.5),
+	  inset 0px 0px 0px rgba(255,255,255,0);
+	-webkit-box-shadow:
+	  0px 1px 3px rgba(000,000,000,0.5),
+	  inset 0px 0px 0px rgba(255,255,255,0);
+	box-shadow:
+	  0px 1px 3px rgba(000,000,000,0.5),
+	  inset 0px 0px 0px rgba(255,255,255,0);
+  
+	text-shadow:
+	  0px 0px 2px rgba(0,0,0,1),
+	  0px 0px 0px rgba(255,255,255,1);
+		
+	  cursor:pointer;
+ }
+
+  #profile-toggle-button a,
+li#pt-userpage,
+li#pt-mytalk,
+li#pt-watchlist,
+li#pt-mycontris,	
+li#pt-logout,
+li#pt-preferences,
+li#pt-login{
+	height:28px;
+	margin:0;
+	margin-right:10px;
+	font-weight: bold;
+	text-transform:uppercase;
+	color: #f2eaea;
+	padding:0 13px;
+	background: -moz-linear-gradient(
+	  top,
+	  #f1960e 0%,
+	  #955f08);
+	background: -webkit-gradient(
+	  linear, left top, left bottom,
+	  from(#cc820b),
+	  to(#955f08));
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	border: 1px solid #000000;
+	-moz-box-shadow:
+	  0px 1px 3px rgba(000,000,000,0.5),
+	  inset 0px 0px 0px rgba(255,255,255,0);
+	-webkit-box-shadow:
+	  0px 1px 3px rgba(000,000,000,0.5),
+	  inset 0px 0px 0px rgba(255,255,255,0);
+	box-shadow:
+	  0px 1px 3px rgba(000,000,000,0.5),
+	  inset 0px 0px 0px rgba(255,255,255,0);
+  
+	text-shadow:
+	  0px 0px 2px rgba(0,0,0,1),
+	  0px 0px 0px rgba(255,255,255,1);
+		
+	  cursor:pointer;
+ }
+
+#profile-toggle-button a:hover,
+li#pt-userpage:hover,
+li#pt-mytalk:hover,
+li#pt-watchlist:hover,
+li#pt-mycontris:hover,	
+li#pt-logout:hover,
+li#pt-preferences:hover,
+li#pt-login:hover {
+ background: -webkit-gradient(
+	linear, left top, left bottom,
+	from(#f9930e),
+	to(#955f08));
+	text-decoration: none !important;
+	background-color: transparent !important;
+}
+/*-------------------------------------------------*/
   form input[type=button],
   form input[type=submit]{
 	height:28px;
