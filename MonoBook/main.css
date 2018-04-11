@@ -67,7 +67,19 @@
 		-webkit-margin-start: 0px;
 		-webkit-margin-end: 0px;
 		font-weight: bold;
+		color: white;
 	}
+
+	h1, h2, h3, h4, h5, h6 {
+		color: white;
+		
+	}
+
+	h4 {
+		color: white;
+	}
+	
+	
 	
 	/*------------------------------------------------------------------*/
 	/*main page body settings*/
@@ -148,7 +160,7 @@
 	/*------------------------------------------------------------------*/
 	/* general styles */
 	a {
-		color: #FFFFFF;
+		color: #FFA50B;
 	}
 	
 	a:visited {
@@ -157,6 +169,10 @@
 	}
 
 	.mw-body-content a.external:visited {
+		color: #FFA50B;
+	}
+
+	.mw-body-content a.external {
 		color: #FFA50B;
 	}
 
@@ -416,8 +432,7 @@
 		padding: 0;
 		margin: 0;
 		border: 0px;
-		background: hidden;
-		overflow: hidden;
+		overflow: visible;
 		line-height: 1.2em;
 		
 	}
@@ -510,6 +525,11 @@
 	** the page-related actions- page/talk, edit etc
 	*/
 	/*THIS CHANGES THE POSITION OF MAIN PAGE - DISUSSION - ETC BUTTONS top buttons*/
+	#pt-notifications-alert .mw-echo-notifications-badge.mw-echo-notifications-badge-all-read, 
+	#pt-notifications-notice .mw-echo-notifications-badge.mw-echo-notifications-badge-all-read {
+		position: inherit;
+		display: inline-box;
+	}
 
 	#p-cactions {
 		position: absolute;
@@ -919,7 +939,7 @@
 	}
 	
 	.ns-0 #content table {
-		background-color: #2D2D2D;
+		background-color: #212121;
 		color: #DDDDDD    /* Set back to white for articles */
 	}
 	/*This edits the page tree*/
@@ -956,8 +976,110 @@
 		background: url(\pics\h3-bg.png) top left repeat #000 !important;
 		padding-left:15px !important;
 		margin: 0;
+		text-decoration: none;
 		
 	  }
+	/*ITEMDB CLASS IMPORT*/  
+	#content tr td h3:hover {
+		background: url(\pics\itemdb-td-hover.png) top left repeat #000 !important;
+	}
+	table#page tr td#menu table.main-menu tr td.itemdb:hover{
+		background: grey;
+	}
+
+	table#page tr td#menu table.main-menu tr td.itemdb{
+		background-color:#1d1d1d;
+		border:0 none
+	}
+	table#page tr td#menu table.main-menu tr td.itemdb a{
+		padding:4px 0 4px 28px;
+		color:white !important
+	}
+
+	table#page tr td#content table.itemdb-atribs a{
+		color:#ddd
+	}
+	table tr td.itemdb-header a{
+		font-weight:bold;
+		text-decoration:none
+	}
+	table tr td.itemdb-detail{
+		background:#212121;
+		color:#ddd;
+		position:relative
+	}
+	table tr td.itemdb-detail img{
+		margin:0 5px 0 10px !important;
+		float:right
+	}
+	table tr td.itemdb-detail h3{
+		font-size:13.5px
+	}
+	table#page tr td#content table.itemdb-list{
+		border-collapse:collapse;
+		width:706px !important;
+		table-layout:fixed
+	}
+	table#page tr td#content table.itemdb-list tr td{
+		vertical-align:top;
+		line-height:14px
+	}
+	table#page tr td#content table.itemdb-list tr td p{
+		margin:0
+	}
+	table.itemdb-atribs{
+		border-collapse:collapse;
+		width:348px;
+		table-layout:fixed;
+		background:#313131
+	}
+	table.itemdb-atribs tr th{
+		text-align:left
+	}
+	table.itemdb-atribs tr td{
+		border-bottom:1px solid #272727;
+		height:47px;
+		vertical-align:middle
+	}
+	table.itemdb-atribs tr td.itemdb-variations-group{
+		background:#222228;
+		padding:0;
+		font-size:12pt;
+		padding-left:20px !important;
+		font-weight:bold
+	}
+	td#content table.itemdb-atribs tr td img{
+		margin:0 15px 0 5px
+	}
+	td#content table.itemdb-atribs tr td p{
+		margin:0 51px
+	}
+	div#bodyContent table td.itemdb-detail div.content{
+		background:transparent
+	}
+	table.itemdb-atribs{
+		width:348px;
+		table-layout:fixed;
+		margin:10px 0 0 0!important;
+		padding:0!important
+	}
+	table.itemdb-atribs tr td{
+		padding-left:10px
+	}
+	table.itemdb-atribs td:hover{
+		background:url(/pics/itemdb-td-hover) center left repeat-x transparent
+	}
+	table.itemdb-item{
+		width:706px
+	}
+	table#page tr td#content table.itemdb-list tr td,table.itemdb-atribs tr th,table.itemdb-atribs tr td{
+		padding:1px !important;
+		border-color:#272727 !important
+	}
+	table.front-pg td table.itemdb-atribs td{
+		padding:0 20px !important
+	}
+/*------------------------------------------------------------------*/
 
 	  td#content {
 		background-color: #08080A;
@@ -979,6 +1101,10 @@
 /*------------------------------------------------------------------*/
 
 /*THESE CHANGE THE PREFERENCES SPECIAL PAGE FOR preferences background colors*/
+	table {
+		border-spacing: 0px;
+	}
+
 	#preferences { /*BACKGROUND COLOR FOR MAJOR TABLE*/
 		background:#2D2D2D;
 	}
@@ -1328,6 +1454,15 @@ li#pt-login:hover {
  
 
 /*------------------------------------------------------------------*/
+/*Visual Editor*/
+.oo-ui-popupWidget-body.oo-ui-clippableElement-clippable {
+    min-height: 1em;
+    color: black;
+}
 
+.ve-init-mw-switchPopupWidget .oo-ui-popupWidget-head {
+    font-weight: bold;
+    color: black;
+}
 /*------------------------------------------------------------------*/
 /*RECORD.CSS IMPORTS*/
