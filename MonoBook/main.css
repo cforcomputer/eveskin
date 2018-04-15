@@ -49,7 +49,7 @@
 	}
 
 	h2 {
-		color: white !important;
+		color: #FFF !important;
 		display: block;
 		font-size: 1.5em;
 		-webkit-margin-before: 0.83em;
@@ -61,26 +61,36 @@
 
 	h3 {
 		display: block;
-		font-size: 1.17em;
+		font-size: 13px;
+		/*
 		-webkit-margin-before: 1em;
 		-webkit-margin-after: 1em;
+		*/
 		-webkit-margin-start: 0px;
 		-webkit-margin-end: 0px;
 		font-weight: bold;
-		color: white;
+		color: #DDDDDD;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: white;
+		color: #DDDDDD;
 		
 	}
 
 	h4 {
-		color: white;
+		color: #DDDDDD;
 	}
 	
-	
-	
+	/*this edits the warning bubble at the top of edit pages*/
+	div.mw-warning-with-logexcerpt
+	{
+		padding: 3px;
+    	margin-bottom: 8px;
+    	margin-top: 56px;
+    	border: 2px solid #2a4b8d;
+    	clear: both;
+	}
+
 	/*------------------------------------------------------------------*/
 	/*main page body settings*/
 	.mw-body {
@@ -88,23 +98,23 @@
     padding: 1em;
     position: relative;
     z-index: 2;
-    background: #1C1C1C;
-    color: #FFFFFF;
-	line-height: 1.5em;
-	margin-top: 111px;
-		
+    /*background: #1C1C1C; /*REMOVE THIS TO CORRECT BACKGROUND OVERLAP*/
+    color: #DDDDDD;
+	line-height: 1.7em;
+	margin-top: 0;
+	min-height: 1050px;	/*remove this to correct bg overlap*/
 	}
 	
 	div#column-one {
-		padding-top: 116.5px;
-		color: #FFFFFF;
+		/*padding-top: 116.5px; this adjusts the height and margin of the sidebar*/
+		color: #DDDDDD;
 	}
 	
 	/* Hide, but keep accessible for screen-readers */
 	#column-one h2 {
 		position: absolute;
 		top: -9999px;
-		color: #FFFFFF;
+		color: #DDDDDD;
 	}
 
 
@@ -112,9 +122,9 @@
 	/* the left column width is specified in class .portlet */
 	/*------------------------------------------------------------------*/
 	body {
-		font-family: 'roboto',arial,sans-serif;
+		font-family: 'arial',sans-serif;
 		margin: 0;
-		margin-top: 2%;
+		margin-top: 55px;
 		margin-bottom: 3%;
 		background: url(/skins/MonoBook/html-bg.jpg?12c36) top center no-repeat #000;
 		overflow-y: auto;
@@ -130,16 +140,16 @@
 	
 	/* scale back up to a sane default */
 	div#globalWrapper {
-		font-size: 78%;
+		font-size: 74%;
 		padding: 10px;
 		position: relative;
 		z-index: 0;
 		background: #1C1C1C;
 		display: flow-root;
 		margin: 0 auto;
-		width: 1400px;
+		width: 966px;
 		left: 0px;
-		top: 0px;
+		top: 55px;
 		
 	}
 	
@@ -169,7 +179,7 @@
 	}
 	a.new,
 	#p-personal a.new {
-		color: #FFA50B;
+		color: #DDDDDD;
 	}
 	
 	ul {
@@ -187,16 +197,18 @@
 	
 	#firstHeading {
 		padding-top: 0;
+		padding-bottom: 35px;
 		overflow: inherit;
-		
+		font-size: 13pt;
+		margin-top: 20px;
 	}
-	
+	/*
 	.firstHeading {
 		margin-bottom: 2em;
 		line-height: 1.3em;
 		padding-bottom: 0;
 	}
-	
+	*/
 	.mw-indicators {
 		float: right;
 		line-height: 1.5em;
@@ -211,7 +223,7 @@
 	}
 	
 	.mw-content-ltr {
-		direction: ltr;
+
 		background: #272727;
 		padding: 1em;
 	}
@@ -219,7 +231,8 @@
 	/*
 	** the main content area
 	*/
-	
+
+
 	#siteNotice {
 		font-size: 95%;
 		padding: 0 0.9em;
@@ -276,7 +289,7 @@
 			vertical-align: top;
 			padding: 0;
 			background: #313131;
-			
+			margin-left: -10px;
 	}
 	
 	/*------------------------------------------------------------------*/
@@ -284,7 +297,7 @@
 	/*this makes the titles blocky*/
 	.portlet h3 {
 		font-size: 12px;
-    line-height: 23px;
+    line-height: 16px;
     color: #fff;
     padding-left: 20px;
 	background: #4f4f4f;
@@ -304,11 +317,6 @@
 		margin-top: 8%;
 		padding-bottom: 20px;
 		
-		
-	}
-/*edit the search title */
-	label {
-		cursor: default;
 		
 	}
 	/*------------*/
@@ -368,42 +376,89 @@
 	/*
 	** Search portlet AKA THE SEARCH BAR ON THE LEFT
 	*/
+	/*edit the search title */
+	div#p-search.portlet {
+	visibility: hidden;
+		
+	}
+	label {
+		cursor: default;
+		
+	}
+
 	#p-search {
 		position: relative;
-		z-index: 3;
+    	z-index: 3;
+    	/*margin-left: 788px;
+    	margin-top: -90px;*/
 		
 	}
 	
 	input.searchButton {
-		margin-top: 2px;
 		font-size: 100%;
+		visibility: hidden;
 	}
-	/*SET AS REMOVED*/
-	#searchGoButton {
-		padding-left: 0.4em;
-		padding-right: 0.5em;
-		display: none;
+	
+	#searchGoButton { /*this changes the go button next to the search bar*/
+		visibility: visible;
+		position: absolute;
+		margin: unset;
+		top: 17px;
+		right: -152px;
+		background:url(/skins/MonoBook/pics/searchIcon.jpg)  center left no-repeat transparent;
+		border: transparent !important;
+		text-indent: 100%;
+    	white-space: nowrap;
+		overflow: hidden;
+		cursor:pointer;
+		height:28px;
+		margin:0;
+		margin-right:0;
 		font-weight: bold;
+		text-transform:none;
+		color: none;
+		padding:0;
+		-moz-box-shadow: none !important;
+		-webkit-box-shadow: none !important;
+		box-shadow: none !important;
+  		text-shadow: none !important;
+		
 	}
 	
 	#searchInput {
-		width: 13em;
-		margin: 9px 0px;
-		font-size: 95%;
+		
 		position: relative;
+		visibility: visible;
+		margin: 7px 0 7px 14px;
+		margin-left: -51px;
+		margin-top: 14px;
+		background: #383838;
+		color: #A1A1A1;
+		border-color: #262626 #535353 #454545 #2D2D2D;
+		border-style: solid;
+		border-width: 1px;
+		padding: 4px;
+		width: 200px;
+		height: 25px;
+		font-size: 12px;
 	}
 	
 	#p-search .pBody {
 		padding: 0.5em 0.4em 0.4em 0.4em;
 		text-align: center;
+		position: relative;
+		margin: unset;
+		margin-left: 833px;
+		margin-top: -100px;
 	}
+	
 	
 	#p-search #searchform div div {
 		margin-top: 0.4em;
 		font-size: 100%;
 	}
 
-
+	
 	/*------------------------------------------------------------------*/
 	/*
 	** the personal toolbar
@@ -415,12 +470,14 @@
 		top: 0;
 		z-index: 3;
 		width: 100%;
-		padding: 0;
-		margin: 0;
+		height: 100px;
+		margin: -110px auto; /*this makes it break out of body*/
 		border: 0px;
-		overflow: visible;
+		overflow: hidden;
 		line-height: 1.2em;
-		
+		margin-left: -50%;
+		margin-right: 0;
+		padding-right: 100%;
 	}
 	
 	#p-personal h3 {
@@ -433,8 +490,11 @@
 	/*personal toolbar background*/
 	#p-personal .pBody {
 		margin: 0;
-		overflow: visible;
-		
+		/*overflow: visible;*/
+		display: table-row;
+		float: right;
+		margin-right: -53%; /*this changes the horizontal 1080direction of the logout// top buttons*/
+		margin-top: 12px;
 	}
 	
 	
@@ -459,7 +519,7 @@
 		list-style-image: none;
 		z-index: 0;
 		cursor: default;
-		text-transform: lowercase;
+		/*text-transform: lowercase;*/
 	}
 	
 	/*-----------------------------------*/
@@ -482,7 +542,7 @@
 	}
 	
 	#p-personal li a:hover {
-		background-color: #1C1C1C;
+		background-color: transparent;
 		text-decoration: none;
 	}
 	
@@ -524,9 +584,10 @@
     	white-space: nowrap;
     	overflow: inherit;
     	background: none;
-    	padding-top: 129px;
+    	padding-top: 28px;
     	padding-left: 10px;
-		
+		margin-top: -10px;
+		margin-left: -1px;
 	}
 	
 	#p-cactions ul {
@@ -557,25 +618,26 @@
 	#p-cactions li a {
 	background-color: #434343;
     height: 29px;
-    color: #FFFFFF;
+    color: #DDDDDD;
     border: none;
     padding: 0.9em 0.9em 0.9em;
     position: relative;
     z-index: 3;
     font-weight: normal;
     text-decoration: none;
-    text-transform: uppercase;
+	text-transform: uppercase;
+	line-height: 29px;
 	}
 	
 	#p-cactions li.selected a {
 		z-index: 3;
 		background-color: #272727;
-		padding-bottom: 14px;
+		padding-bottom: 12px;
 	
 	}
 	
 	#p-cactions .new a {
-		color: #FFFFFF;
+		color: #DDDDDD;
 	}
 	
 	#p-cactions li a:hover {
@@ -657,7 +719,7 @@
     	padding-top: 13px;
     	padding-bottom: 23px;
     	margin: 23px auto -60px auto;
-    	width: 1420px;
+    	width: 986px;
 		margin-left: -10px;
 		display: table-caption;
 		}
@@ -665,7 +727,7 @@
 	div#footer li {
 		display: inline;
 		margin: 0 2.3em;
-		color:white;
+		color:#FFF;
 	}
 	
 	#f-copyrightico {
@@ -763,7 +825,7 @@
 		border: 1px solid #ccc;
 		background: #2D2D2D;
 		padding: 0.2em 1em;
-		color: white;
+		color: #FFF;
 	}
 	
 	#powersearch p {
@@ -847,14 +909,17 @@
 	/* INCREASE SIDEBAR WIDTH */
 	#column-content { margin-left: -15em; }
 	#column-content #content { margin-left: 15em; }
+	/*how much logo is showing*/
 	#p-logo a, #p-logo a:hover { 
-		width: 15em; 
-		height: 3em;
+		width: 25em;
+    	z-index: 3;
+    	height: 4em;
+    	margin-top: -70%;
 	}
 	#p-cactions { left: 14.5em; }
-	.portlet { width: 14em; }
-	div#column-content { margin-left: -14em; }
-	div#content { margin-left: 14em; }
+	.portlet { width: 187.5px; }
+	div#column-content { margin-left: -177.5px; }
+	div#content { margin-left: -177.5px; }
 	
 	/*------------------------------------------------------------------*/
 	
@@ -865,33 +930,31 @@
 		
 		text-align: left;
 		color: #dddddd;
-		
 		background: none;
-		
 		display: inline;
-    border-collapse: separate;
-    border-spacing: 2px;
-    border-color: grey;
+    	border-collapse: separate;
+    	border-spacing: 2px;
+    	border-color: grey;
 	}
 
 	form#userlogin {
-	float: right;
-    height: 57px;
-    overflow: hidden;
-    width: 380px;
+		float: right;
+    	height: 57px;
+    	overflow: hidden;
+    	width: 380px;
 	}
 
 	/*login buttons*/
 	.mw-ui-button.mw-ui-progressive {
 		background-color: #f9930e;
-		color: white;
+		color: #FFF;
 		border: 1px solid #f9930e;
 		text-shadow: 0 1px rgba(0,0,0,0.1);
 	}
 
 	#mw-createaccount-join {
 		background-color: #f9930e;
-		color: white;
+		color: #FFF;
 		border: 1px solid #f9930e;
 		text-shadow: 0 2px rgba(0,0,0,0.1);
 	}
@@ -921,12 +984,12 @@
 	/*THIS CHANGES THE COLOR OF ALL TABLES*/
 	#content table {
 		background-color: #2D2D2D;
-		color: #DDDDDD;    
+		   
 	}
 	
 	.ns-0 #content table {
 		background-color: #212121;
-		color: #DDDDDD    /* Set back to white for articles */
+		    /* Set back to white for articles */
 	}
 	/*This edits the page tree*/
 	#toc {
@@ -939,7 +1002,7 @@
 		}
 
 	#toc h2 { /*THIS OVERRIDES THE COLOR OF THE TOC CONTENTS TITLE*/
-		color:white;
+		color:#FFF;
 		margin: 10px 0;
  		border-bottom: 1px solid #888;
     	padding: 2px 10px;
@@ -950,17 +1013,17 @@
 	}
 
 	span.mw-editsection-bracket { /*THIS CHANGES BRACKETS AROUND THE EDIT BUTTONS*/
-		color:white;
+		color:#FFF;
 	}
 	
 	span.tocnumber { /*THIS CHANGES THE TOC NUMBER*/
-		color:white;
+		color:#FFF;
 	}
 /*------------------------------------------------------------------*/
 /*THESE ADD BACKGROUNDS FOR HEADER TEXT*/
 	    #content tr td h3 {
 		background: url(\pics\h3-bg.png) top left repeat #000 !important;
-		padding-left:15px !important;
+		/*padding-left:15px !important;*/
 		margin: 0;
 		text-decoration: none;
 		
@@ -979,7 +1042,7 @@
 	}
 	table#page tr td#menu table.main-menu tr td.itemdb a{
 		padding:4px 0 4px 28px;
-		color:white !important
+		color:#FFF !important
 	}
 
 	table#page tr td#content table.itemdb-atribs a{
@@ -1069,7 +1132,7 @@
 
 	  td#content {
 		background-color: #08080A;
-		border: 1px solid #666;
+		/*border: 1px solid #666;*/
 		vertical-align: top;
 		padding: 10px;
 		font-size: 11px;
@@ -1082,13 +1145,14 @@
 	 table#page tr td#content table.front-pg tr td { /*THIS CHANGES THE BACKGROUND COLOR OF THE FRONT PAGE TABLE */
 		padding:0;
 		background:#08080A;
-		
+		border-color: none;
 		}
 /*------------------------------------------------------------------*/
 
 /*THESE CHANGE THE PREFERENCES SPECIAL PAGE FOR preferences background colors*/
 	table {
 		border-spacing: 0px;
+		border-color: none;
 	}
 
 	#preferences { /*BACKGROUND COLOR FOR MAJOR TABLE*/
@@ -1096,12 +1160,12 @@
 	}
 	
 	.mw-email-not-authenticated .mw-input, .mw-email-none .mw-input {
-		border: 1px solid white;
+		border: 1px solid #FFF;
 		
 	}
 
 	fieldset {
-		border: 1px solid white;
+		border: 1px solid #FFF;
 		margin: 1em 0 1em 0;
 		padding: 0 1em 1em;
 	}
@@ -1116,12 +1180,12 @@
 	/*--------------------------*/
 	.client-js #preftoc li {
 		background:#2D2D2D;
-		color: white;
+		color: #FFF;
 		border: none;
 		margin: 0 0 2 0.2px;
 	}                             /*these change the color for the preference tabs*/
 	.client-js #preftoc a {
-		color: white;
+		color: #FFF;
 	}
 	
 	.client-js #preftoc li.selected { /*THIS CHANGES --SELECTED-- PREFERENCE TAB COLORS*/
@@ -1167,13 +1231,20 @@ textarea#wpTextbox1 { /*this edits the "editing" text box*/
 
 /*------------------------------------------------------------------*/
 #contentSub {
-	font-size: 84%;
+	font-size: 92%;
     line-height: 5em;
-    margin: 0 0 1.4em 1em;
-    color: #54595d;
+    margin: 65px auto;
+    color: rgb(175, 175, 175);
     width: auto;
+    margin-top: -115px;
+    margin-left: -185px;
 }
 
+span.mw-redirectedfrom
+{
+	margin: -42px -8px !important;
+    position: absolute;
+}
 
 /*-------------upload file area settings---------------*/
 
@@ -1215,7 +1286,7 @@ hr {
   
   table.mw_metadata td {
 	background-color: #313131;
-	border-color: #3f3f3f;  
+    border-color: #3f3f3f;  
   }
   
   table.mw_metadata th{
@@ -1252,12 +1323,13 @@ hr {
 /*-------------------ADVERTISING------------------------------*/
 
 div#siteNotice.mw-body-content {
-	margin: -11.2em auto 0em auto;
+	margin: -12.2em auto 0em auto;
     position: absolute;
     z-index: 3;
     left: 0;
     width: 100%;
-    margin-left: -9em;
+	margin-left: -9em;
+	background-color: transparent !important;
 }
 /*-------------------------------------------------*/
   /*-------------------------------------------------*/
@@ -1283,7 +1355,7 @@ div#siteNotice.mw-body-content {
 	font-weight: bold;
 	text-transform:uppercase;
 	color: #f2eaea;
-	padding:0 13px;
+	padding:7px;
 	background: -moz-linear-gradient(
 	  top,
 	  #f2eaea 0%,
@@ -1294,7 +1366,7 @@ div#siteNotice.mw-body-content {
 	  to(rgba(100, 100, 100, 0.5)));
 	-moz-border-radius: 0px;
 	-webkit-border-radius: 0px;
-	border-radius: 0px;
+	border-radius: 2px;
 	border: 1px solid #000000;
 	-moz-box-shadow:
 	  0px 1px 3px rgba(000,000,000,0.5),
@@ -1313,13 +1385,16 @@ div#siteNotice.mw-body-content {
 	  cursor:pointer;
  }
 
-  #profile-toggle-button a,
+  #profile-toggle-button a,/*this changes the color for the login/ contrib/etc top buttons*/
 li#pt-userpage,
 li#pt-mytalk,
 li#pt-watchlist,
 li#pt-mycontris,	
 li#pt-logout,
 li#pt-preferences,
+/*this and below edits the save changes buttons for the edit page*/
+.oo-ui-buttonElement-framed.oo-ui-flaggedElement-constructive > .oo-ui-buttonElement-button, 
+input#wpPreview, input#wpDiff, #mw-watchlist-options form p input[type=submit], .editButtons input#wpPreview, .editButtons input#wpDiff, form input[name=addcat], form input[type=submit].historysubmit, form input[type=submit].univGray,
 li#pt-login{
 	height:28px;
 	margin:0;
@@ -1327,7 +1402,7 @@ li#pt-login{
 	font-weight: bold;
 	text-transform:uppercase;
 	color: #f2eaea;
-	padding:0 13px;
+	padding: 7px;
 	background: -moz-linear-gradient(
 	  top,
 	  #f1960e 0%,
@@ -1338,8 +1413,10 @@ li#pt-login{
 	  to(#955f08));
 	-moz-border-radius: 0px;
 	-webkit-border-radius: 0px;
-	border-radius: 0px;
+	border-radius: 2px;
 	border: 1px solid #000000;
+	-webkit-text-stroke-width: 1px black;
+
 	-moz-box-shadow:
 	  0px 1px 3px rgba(000,000,000,0.5),
 	  inset 0px 0px 0px rgba(255,255,255,0);
@@ -1349,14 +1426,15 @@ li#pt-login{
 	box-shadow:
 	  0px 1px 3px rgba(000,000,000,0.5),
 	  inset 0px 0px 0px rgba(255,255,255,0);
-  
-	text-shadow:
-	  0px 0px 2px rgba(0,0,0,1),
-	  0px 0px 0px rgba(255,255,255,1);
+	  text-shadow:
+	  0px 0px 4px rgba(0,0,0,1);
 		
 	  cursor:pointer;
  }
 
+li#n-EVElopedia-Home {
+	color:white !important;
+}
 #profile-toggle-button a:hover,
 li#pt-userpage:hover,
 li#pt-mytalk:hover,
@@ -1364,6 +1442,7 @@ li#pt-watchlist:hover,
 li#pt-mycontris:hover,	
 li#pt-logout:hover,
 li#pt-preferences:hover,
+.oo-ui-buttonElement-framed.oo-ui-flaggedElement-constructive > .oo-ui-buttonElement-button:hover,
 li#pt-login:hover {
  background: -webkit-gradient(
 	linear, left top, left bottom,
