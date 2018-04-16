@@ -102,7 +102,7 @@
     color: #DDDDDD;
 	line-height: 1.7em;
 	margin-top: 0;
-	min-height: 1050px;	/*remove this to correct bg overlap*/
+	/*min-height: 1050px;	/*remove this to correct bg overlap*/
 	}
 	
 	div#column-one {
@@ -147,7 +147,7 @@
 		background: #1C1C1C;
 		display: flow-root;
 		margin: 0 auto;
-		width: 966px;
+		width: 976px;
 		left: 0px;
 		top: 55px;
 		
@@ -172,7 +172,8 @@
 		color: #FFA50B;
 	}
 
-	a:hover {color: white;
+	a:hover {
+	color: white;
 	}
 	
 	a:active {color: #FFA50B;
@@ -290,6 +291,11 @@
 			padding: 0;
 			background: #313131;
 			margin-left: -10px;
+			font-weight: bold;
+			font-size: 99%;
+		/*corrects sidebar*/
+			margin-bottom: -35px;
+			margin-top: 35px;
 	}
 	
 	/*------------------------------------------------------------------*/
@@ -314,9 +320,9 @@
 		border-collapse: collapse;
 		list-style-type:none;
 		padding: -0.5em 0.3em;
-		margin-top: 8%;
+		/*margin-top: 8%;*/
 		padding-bottom: 20px;
-		
+		line-height: 26px; /*aligns the sidebar with the TOP TITLE*/
 		
 	}
 	/*------------*/
@@ -339,8 +345,14 @@
 	.portlet li {
 		padding: 0;
 		margin: 0;
+		overflow: visible;
 		
-		
+	}
+
+	.portlet li:hover {
+		background: url(/skins/MonoBook/pics/menu-arrow.png)  center right no-repeat transparent;
+		background-position-x: -10px;	
+		overflow: visible;
 	}
 	
 	/*------------------------------------------------------------------*/
@@ -387,7 +399,7 @@
 	}
 
 	#p-search {
-		position: relative;
+		position: absolute;
     	z-index: 3;
     	/*margin-left: 788px;
     	margin-top: -90px;*/
@@ -402,26 +414,15 @@
 	#searchGoButton { /*this changes the go button next to the search bar*/
 		visibility: visible;
 		position: absolute;
-		margin: unset;
-		top: 17px;
-		right: -152px;
-		background:url(/skins/MonoBook/pics/searchIcon.jpg)  center left no-repeat transparent;
+		top: 16px;
+		right: -156px;
+		background: url(https://www.evelopedia.org/skins/MonoBook/pics/searchIcon.jpg) center left no-repeat transparent;
 		border: transparent !important;
-		text-indent: 100%;
-    	white-space: nowrap;
-		overflow: hidden;
-		cursor:pointer;
-		height:28px;
-		margin:0;
-		margin-right:0;
-		font-weight: bold;
-		text-transform:none;
-		color: none;
-		padding:0;
-		-moz-box-shadow: none !important;
-		-webkit-box-shadow: none !important;
+		cursor: pointer;
+		color: transparent;
 		box-shadow: none !important;
-  		text-shadow: none !important;
+		text-shadow: none !important;
+		height: 28px;
 		
 	}
 	
@@ -430,7 +431,7 @@
 		position: relative;
 		visibility: visible;
 		margin: 7px 0 7px 14px;
-		margin-left: -51px;
+		margin-left: -42px;
 		margin-top: 14px;
 		background: #383838;
 		color: #A1A1A1;
@@ -449,7 +450,7 @@
 		position: relative;
 		margin: unset;
 		margin-left: 833px;
-		margin-top: -100px;
+		margin-top: -169px;
 	}
 	
 	
@@ -584,8 +585,8 @@
     	white-space: nowrap;
     	overflow: inherit;
     	background: none;
-    	padding-top: 28px;
-    	padding-left: 10px;
+    	padding-top: 43px;
+    	padding-left: 12px;
 		margin-top: -10px;
 		margin-left: -1px;
 	}
@@ -627,6 +628,7 @@
     text-decoration: none;
 	text-transform: uppercase;
 	line-height: 29px;
+	font-weight: bold;
 	}
 	
 	#p-cactions li.selected a {
@@ -714,20 +716,22 @@
 	*/
 	div#footer {
 		background-color: #2D2D2D;
-    	text-align: center;
-    	font-size: 85%;
-    	padding-top: 13px;
-    	padding-bottom: 23px;
+    	font-size: 83%;
     	margin: 23px auto -60px auto;
-    	width: 986px;
-		margin-left: -10px;
-		display: table-caption;
-		}
+    	width: 967px;
+    	margin-left: -10px;
+    	display: block;
+    	float: left;
+    	line-height: 42px;
+    	font-weight: bold;
+    	color: #a1a1a1;
+    	padding: 0 15px;
+	}
 	
 	div#footer li {
 		display: inline;
 		margin: 0 2.3em;
-		color:#FFF;
+		color:#a1a1a1;
 	}
 	
 	#f-copyrightico {
@@ -739,13 +743,13 @@
 	#f-poweredbyico { /*This edits the powered by mediawiki icon, currently disabled*/
 		float: right;
 		height: 2%;
-		display:none;
+
 	}
 	
 	#f-copyrightico {
 		float: left;
 		height: 1%;
-		visibility:hidden;
+		
 	}
 	
 	/*------------------------------------------------------------------*/
@@ -817,8 +821,26 @@
 	/*------------------------------------------------------------------*/
 	/* no article text */
 	table.wikitable > tr > th, table.wikitable > * > tr > th {
-		background-color: #3E3D45;
+		background-color: #1c1c1c;
 		text-align: center;
+		color:#ccc !important;
+	}
+/*changes the border color of tables*/
+	#mw-content-text td, #mw-content-text th { /*removes the annoying as fuck padding around tables*/
+		padding: 0px;
+		border-color: #3f3f3f;
+		background-color:#1c1c1c;
+		font-size: 90%;
+	}
+
+	div#bodyContent table div.content {
+		padding: 15px;
+		background: #313131;
+		overflow: hidden;
+	}
+
+	table.wikitable {
+		color:#ccc;
 	}
 	
 	div.noarticletext {
@@ -914,7 +936,8 @@
 		width: 25em;
     	z-index: 3;
     	height: 4em;
-    	margin-top: -70%;
+		margin-top: -98%;
+		margin-left: 13%;
 	}
 	#p-cactions { left: 14.5em; }
 	.portlet { width: 187.5px; }
@@ -1210,10 +1233,24 @@ textarea#wpTextbox1 { /*this edits the "editing" text box*/
 	width:100%
 }
 
+div.mw-editinginterface
+{
+	margin-top: 56px;
+}
+
 .editOptions {
 	background:#383838;
 }
 
+form#editform 
+{
+	margin-top: 56px !important;
+}
+
+#wikiPreview.ontop { /*preview area no overlap*/
+    margin-bottom: 1em;
+    margin-top: 56px;
+}
 /*this edits the size of the summary bar for the editing text box*/
 .oo-ui-textInputWidget input, .oo-ui-textInputWidget textarea {
     padding: 0.546875em 0.5em 0.625em 0.5em;
@@ -1250,6 +1287,7 @@ span.mw-redirectedfrom
 
 div#mw-content-text {
 	background: #272727;
+	
 }
 
 .MediaTransformError {
@@ -1385,7 +1423,25 @@ div#siteNotice.mw-body-content {
 	  cursor:pointer;
  }
 
-  #profile-toggle-button a,/*this changes the color for the login/ contrib/etc top buttons*/
+/* form input[type=button], form input[type=submit] {
+     margin: 0; 
+     font-weight: none; 
+     text-transform: none; 
+     color: none;
+    background: none;
+     background: none !important;
+    -moz-border-radius: none !important;
+     -webkit-border-radius: none !important;
+     border-radius: none !important;
+     border: none !important;
+    -moz-box-shadow: none !important;
+     -webkit-box-shadow: none;
+     box-shadow: none;
+     text-shadow: none;
+     cursor: none;
+ } */
+
+#profile-toggle-button a,/*this changes the color for the login/ contrib/etc top buttons*/
 li#pt-userpage,
 li#pt-mytalk,
 li#pt-watchlist,
@@ -1396,7 +1452,7 @@ li#pt-preferences,
 .oo-ui-buttonElement-framed.oo-ui-flaggedElement-constructive > .oo-ui-buttonElement-button, 
 input#wpPreview, input#wpDiff, #mw-watchlist-options form p input[type=submit], .editButtons input#wpPreview, .editButtons input#wpDiff, form input[name=addcat], form input[type=submit].historysubmit, form input[type=submit].univGray,
 li#pt-login{
-	height:28px;
+	height:38px;
 	margin:0;
 	margin-right:10px;
 	font-weight: bold;
@@ -1432,8 +1488,9 @@ li#pt-login{
 	  cursor:pointer;
  }
 
-li#n-EVElopedia-Home {
+li#n-EVElopedia-Home:hover {
 	color:white !important;
+	background: url(/skins/MonoBook/pics/menu-arrow.png)  center left no-repeat transparent; 
 }
 #profile-toggle-button a:hover,
 li#pt-userpage:hover,
@@ -1453,7 +1510,7 @@ li#pt-login:hover {
 }
 /*-------------------------------------------------*/
   form input[type=button],
-  form input[type=submit]{
+  {
 	height:28px;
 	margin:0;
 	margin-right:10px;
@@ -1516,8 +1573,54 @@ li#pt-login:hover {
 	  background-position:right top;
   }
   
- 
+ /*editor color scheme*/
+ .mw-newarticletext.plainlinks {
+	margin-top: 56px ;
+	
+ }
 
+ .wikiEditor-ui {
+	position: relative;
+    clear: both;
+    width: 100%;
+    background-color: #454545;
+ }
+ .oo-ui-buttonElement-frameless.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button > .oo-ui-labelElement-label {
+    height:22px;
+	margin:0;
+	margin-right:10px;
+	font-weight: bold;
+	text-transform:uppercase;
+	color: #f2eaea;
+	padding:0 13px;
+	background: -moz-linear-gradient(
+	  center,
+	  red 0%,
+	  rgb(168, 83, 83));
+	background: -webkit-gradient(
+	  linear, left top, left bottom,
+	  from(#cc320b),
+	  to(#923d1b));
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	border: 1px solid #000000;
+	-moz-box-shadow:
+	  0px 1px 3px rgba(000,000,000,0.5),
+	  inset 0px 0px 0px rgba(255,255,255,0);
+	-webkit-box-shadow:
+	  0px 1px 3px rgba(000,000,000,0.5),
+	  inset 0px 0px 0px rgba(255,255,255,0);
+	box-shadow:
+	  0px 1px 3px rgba(000,000,000,0.5),
+	  inset 0px 0px 0px rgba(255,255,255,0);
+  
+	text-shadow:
+	  0px 0px 2px rgba(0,0,0,1),
+	  0px 0px 0px rgba(255,255,255,1);
+		
+	  cursor:pointer;
+ }
 /*------------------------------------------------------------------*/
 /*Visual Editor*/
 .oo-ui-popupWidget-body.oo-ui-clippableElement-clippable {
