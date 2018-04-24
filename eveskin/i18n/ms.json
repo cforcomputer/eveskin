@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Anakmalaysia",
+			"Pizza1016",
+			"Aviator"
+		]
+	},
+	"skinname-eveskin": "eveskin",
+	"eveskin-desc": "Rupa MediaWiki yang klasik sejak tahun 2004, dinamakan bersempena gambar buku hitam putih pada latar belakang laman.",
+	"eveskin.css": "/* CSS yang terletak di sini akan mempengaruhi pengguna kulit eveskin */",
+	"eveskin.js": "/* Sebarang kod JavaScript di sini akan dimuat bagi sesiapa yang memakai rupa eveskin */"
+}

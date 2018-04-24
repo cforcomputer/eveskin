@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"skinname-eveskin": "eveskin",
+	"eveskin-desc": "The classic MediaWiki skin since 2004, named after the black-and-white photo of a book in the page background",
+	"eveskin.css": "/* CSS placed here will affect users of the eveskin skin */",
+	"eveskin.js": "/* Any JavaScript here will be loaded for users using the eveskin skin */"
+}

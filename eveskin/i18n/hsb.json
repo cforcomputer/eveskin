@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Michawiki"
+		]
+	},
+	"skinname-eveskin": "eveskin",
+	"eveskin.css": "/* CSS wobdźěłać, zo by so skin „eveskin” za wšěčh wužiwarjow tutoho skina priměrił */",
+	"eveskin.js": "/* Slědowacy JavaScript začita so za wužiwarjow, kotřiž šat eveskin wužiwaja */"
+}

@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beta16",
+			"Darth Kule"
+		]
+	},
+	"eveskin-desc": "Il tema classico di MediaWiki dal 2004, prende il nome dall'immagine in bianco e nero del libro usata come sfondo della pagina",
+	"eveskin.css": "/* Gli stili CSS inseriti qui si applicano agli utenti che usano il tema eveskin */",
+	"eveskin.js": "/* Il codice JavaScript inserito qui viene caricato dagli utenti che usano il tema eveskin */"
+}

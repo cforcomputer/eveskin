@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"AnakngAraw",
+			"Sky Harbor"
+		]
+	},
+	"skinname-eveskin": "eveskin",
+	"eveskin.css": "/* Ang CSS na inilagay dito ay makakaapekto sa mga tagagamit ng pabalat na eveskin */",
+	"eveskin.js": "/* Ang anumang JavaScript dito ay ikakarga para sa mga tagagamit na gumagamit ng pabalat na eveskin */"
+}

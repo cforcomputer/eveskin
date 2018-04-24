@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Cedric31"
+		]
+	},
+	"skinname-eveskin": "eveskin",
+	"eveskin.css": "/* Lo CSS plaçat aicí afectarà los utilizaires del skin eveskin */",
+	"eveskin.js": "/* Tot JavaScript aicí serà cargat amb las paginas accedidas pels utilizaires de l’abilhatge MonoBook unicament. */"
+}

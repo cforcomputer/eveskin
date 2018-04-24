@@ -1,0 +1,52 @@
+{
+	"name": "eveskin",
+	"author": [
+		"Gabriel Wicke",
+		"Trevton"
+	],
+	"url": "https://www.mediawiki.org/wiki/Skin:eveskin",
+	"descriptionmsg": "eveskin-desc",
+	"namemsg": "skinname-eveskin",
+	"license-name": "GPL-2.0+",
+	"type": "skin",
+	"requires": {
+		"MediaWiki": ">= 1.25.0"
+	},
+	"ValidSkinNames": {
+		"eveskin": "eveskin"
+	},
+	"SkinOOUIThemes": {
+		"eveskin": "Apex"
+	},
+	"MessagesDirs": {
+		"eveskin": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"skins.eveskin.styles": {
+			"position": "top",
+			"styles": {
+				"main.css": {
+					"media": "screen"
+				}
+			}
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteSkinPath": "eveskin"
+	},
+	"ResourceModuleSkinStyles": {
+		"eveskin": {
+			"+mediawiki.action.view.redirectPage": "skinStyles/mediawiki.action.view.redirectPage.css",
+			"+mediawiki.special.preferences.styles": "skinStyles/mediawiki.special.preferences.styles.less",
+			"+mediawiki.notification": "skinStyles/mediawiki.notification.less"
+		}
+	},
+	"AutoloadClasses": {
+		"Skineveskin": "Skineveskin.php",
+		"eveskinTemplate": "eveskinTemplate.php"
+	},
+	"manifest_version": 1
+}

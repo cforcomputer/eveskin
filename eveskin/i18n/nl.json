@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Siebrand",
+			"Sjoerddebruin"
+		]
+	},
+	"skinname-eveskin": "eveskin",
+	"eveskin-desc": "De klassieke MediaWiki-vormgeving sinds 2004, genoemd naar de zwart-witfoto van een boek op de achtergrond van de pagina",
+	"eveskin.css": "/* CSS die hier wordt geplaatst heeft alleen invloed op het uiterlijk eveskin */",
+	"eveskin.js": "/* JavaScript die hier wordt geplaatst heeft alleen invloed op gebruikers die het uiterlijk Monobook gebruiken */"
+}

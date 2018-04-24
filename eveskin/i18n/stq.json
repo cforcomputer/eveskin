@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Maartenvdbent"
+		]
+	},
+	"eveskin.css": "/* Littikschrieuwen nit twinge */",
+	"eveskin.js": "/* Ferallerd; benutsje insteede deerfon [[MediaWiki:common.js]] */"
+}

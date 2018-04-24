@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Lejonel",
+			"Lokal Profil",
+			"Skalman"
+		]
+	},
+	"skinname-eveskin": "eveskin",
+	"eveskin-desc": "Det klassiska MediaWiki-utseendet sedan 2004, uppkallad efter det svart-vita foto på en bok som syns i bakgrunden på sidan.",
+	"eveskin.css": "/* CSS som skrivs här kommer att påverka alla användare av utseendet eveskin */",
+	"eveskin.js": "/* JavaScript här kommer att laddas för dem som använder utseendet eveskin */"
+}

@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"CERminator",
+			"Kal-El",
+			"Srdjan m"
+		]
+	},
+	"skinname-eveskin": "MonoKnjiga",
+	"eveskin-desc": "Klasična MediaWiki tema iz 2004. Dobila je ime po crnobijeloj slici knjige u pozadini stranice",
+	"eveskin.css": "/* CSS umetnut ovdje uticat će na korisnike koji koriste eveskin skin */",
+	"eveskin.js": "/* Bilo koja JavaScript će biti učitana za sve korisnike koji koriste eveskin skin */"
+}

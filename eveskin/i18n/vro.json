@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Võrok"
+		]
+	},
+	"eveskin.css": "/* Taa lehe pääl om eveskin-vällänägemist muutvit kujonduisi. */",
+	"eveskin.js": "/* Olõi soovitõt; pruugiq [[MediaWiki:common.js]] */"
+}

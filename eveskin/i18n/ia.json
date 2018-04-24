@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"skinname-eveskin": "eveskin",
+	"eveskin-desc": "Le apparentia classic de MediaWiki depost 2004, nominate assi pro le imagine in nigro e blanco (\"mono\") de un libro (\"book\") in le fundo del pagina.",
+	"eveskin.css": "/* Le CSS placiate hic afficera le usatores del apparentia eveskin */",
+	"eveskin.js": "/* Omne JavaScript hic se executara pro le usatores del apparentia eveskin */"
+}

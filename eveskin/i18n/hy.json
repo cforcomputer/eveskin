@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Teak"
+		]
+	},
+	"skinname-eveskin": "ՄիաԳիրք",
+	"eveskin.css": "/* Այստեղ տեղադրված CSS կոդը կկիրառվի eveskin տեսքի վրա*/",
+	"eveskin.js": "/* Հնացած է. օգտագործեք [[MediaWiki:common.js]] */"
+}

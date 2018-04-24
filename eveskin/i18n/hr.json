@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bugoslav"
+		]
+	},
+	"skinname-eveskin": "eveskin",
+	"eveskin-desc": "Klasična tema dizajna MediaWiki od godine 2004., nazvana je u čast crno-bijele fotografije iz knjige, koju se rabilo kao pozadinu stranice",
+	"eveskin.css": "/** Ovdje idu izmjene eveskin stylesheeta */",
+	"eveskin.js": "/* Ne rabi se više; molimo rabite [[MediaWiki:common.js]] */"
+}

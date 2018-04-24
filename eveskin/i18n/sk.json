@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Helix84",
+			"Rudko"
+		]
+	},
+	"skinname-eveskin": "eveskin",
+	"eveskin.css": "/* Tu umiestnené CSS bude ovplyvňovať používateľov štýlu eveskin */",
+	"eveskin.js": "/* Tu sa nachádzajúci JavaScript sa načíta používateľom vzhľadu eveskin*/"
+}

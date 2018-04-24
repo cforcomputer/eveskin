@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Pikne"
+		]
+	},
+	"skinname-eveskin": "eveskin",
+	"eveskin-desc": "2004. aastast pärinev klassikaline MediaWiki kujundus, mis on nime saanud lehekülje taustal oleva mustvalge raamatu foto järgi",
+	"eveskin.css": "/* Siin asuv kaskaadilaadistik puudutab kõiki eveskini-kujunduse kasutajaid. */",
+	"eveskin.js": "/* Siin asuv JavaScript laaditakse eveskini-kujunduse kasutajate jaoks. */"
+}

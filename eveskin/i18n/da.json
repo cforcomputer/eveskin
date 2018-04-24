@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Peter Alberti",
+			"Christian List"
+		]
+	},
+	"skinname-eveskin": "eveskin",
+	"eveskin-desc": "Den klassiske MediaWiki hud siden 2004, opkaldt efter det sort-hvide foto af en bog i baggrunden af siderne",
+	"eveskin.css": "/** CSS inkluderet her vil være aktivt for brugere af eveskin-temaet . */",
+	"eveskin.js": "/* JavaScript i denne fil vil indlæses for brugere af udseendet eveskin */"
+}

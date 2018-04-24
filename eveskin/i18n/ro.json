@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Firilacroco",
+			"Minisarm"
+		]
+	},
+	"skinname-eveskin": "eveskin",
+	"eveskin-desc": "Aspectul clasic al MediaWiki încă din 2004, botezat după fotografia alb-negru a unei cărți din fundal",
+	"eveskin.css": "/* modificați acest fișier pentru a adapta înfățișarea eveskin-ului pentru tot situl*/"
+}

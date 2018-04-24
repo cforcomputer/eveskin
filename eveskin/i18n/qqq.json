@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Meno25",
+			"Umherirrender",
+			"Matma Rex",
+			"Raymond"
+		]
+	},
+	"skinname-eveskin": "{{optional}}",
+	"eveskin-desc": "{{desc|what=skin|name=MonoBook|url=https://www.mediawiki.org/wiki/Skin:eveskin}}",
+	"eveskin.css": "{{optional}}\nCSS applied to users using eveskin skin.",
+	"eveskin.js": "{{optional}}\nJS for users using eveskin skin."
+}

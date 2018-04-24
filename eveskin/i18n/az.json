@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vago",
+			"Vugar 1981"
+		]
+	},
+	"skinname-eveskin": "eveskin",
+	"eveskin.css": "/* Burada yerləşən CSS eveskin skin istifadəçilərinə tətbiq olunur */",
+	"eveskin.js": "/* Burada eveskin skin istifadəçiləri üçün istənilən JavaScript yüklənəcək */"
+}

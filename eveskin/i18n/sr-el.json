@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Rancher"
+		]
+	},
+	"skinname-eveskin": "eveskin",
+	"eveskin.css": "/* CSS postavljen ovde će uticati na sve korisnike teme „eveskin“ */",
+	"eveskin.js": "/* Javaskript postavljen ovde će se učitati za sve one koji koriste temu „eveskin“ */"
+}

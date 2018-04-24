@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dani",
+			"Tacsipacsi"
+		]
+	},
+	"skinname-eveskin": "eveskin",
+	"eveskin-desc": "A klasszikus MediaWiki-felület 2004 óta; egy könyv fekete-fehér fotója alapján kapta a nevét",
+	"eveskin.css": "/* Az ide elhelyezett CSS hatással lesz a eveskin felület használóira */",
+	"eveskin.js": "/* A eveskin felületet használó szerkesztők számára betöltendő JavaScriptek */"
+}

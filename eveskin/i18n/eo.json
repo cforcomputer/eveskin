@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Objectivesea"
+		]
+	},
+	"skinname-eveskin": "Librejo",
+	"eveskin.css": "/* La jena CSS influos la paĝaspekton por uzantoj de la Libreja temo. */",
+	"eveskin.js": "/* La jena Ĝavaskripto ŝargiĝos por uzantoj de la Libreja temo. */"
+}

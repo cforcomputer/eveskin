@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eirik",
+			"Frokor",
+			"Njardarlogar"
+		]
+	},
+	"skinname-eveskin": "eveskin",
+	"eveskin.css": "/* CSS-tekst som vert plassert her, endrar utsjånaden til sidedrakta eveskin */",
+	"eveskin.js": "/* Javascript i denne fila vil gjelde for brukarar av drakta eveskin */"
+}

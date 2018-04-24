@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Xuacu"
+		]
+	},
+	"skinname-eveskin": "eveskin",
+	"eveskin-desc": "El tema clásicu de MediaWiki dende 2004, llamáu asina pola foto en blanco y negro d'un llibru nel fondu de la páxina",
+	"eveskin.css": "/* Los CSS allugaos equí afeutarán a los usuarios del aspeutu Monobook */",
+	"eveskin.js": "/* Cualesquier JavaScript que tea equí se cargará pa los usuarios del aspeutu MonoBook */"
+}

@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Geitost",
+			"Metalhead64",
+			"Kghbln"
+		]
+	},
+	"skinname-eveskin": "eveskin",
+	"eveskin-desc": "Stellt eine klassische Benutzeroberfläche bereit",
+	"eveskin.css": "/* Das folgende CSS wird für Benutzer der Benutzeroberfläche eveskin geladen */",
+	"eveskin.js": "/* Das folgende JavaScript wird für Benutzer der Benutzeroberfläche eveskin geladen. */"
+}

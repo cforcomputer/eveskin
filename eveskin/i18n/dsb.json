@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Michawiki",
+			"Nepl1"
+		]
+	},
+	"skinname-eveskin": "eveskin",
+	"eveskin.css": "/* How zaměstnjony CSS wustatkujo se na wužywarje eveskin-šata */",
+	"eveskin.js": "/* Slědujucy JavaScript zacytajo se za wužywarjow, kótarež skin eveskin wužywaju */"
+}

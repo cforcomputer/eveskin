@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Arystanbek"
+		]
+	},
+	"skinname-eveskin": "Жеке кітап (eveskin)",
+	"eveskin.css": "/* Мында орналастырылған CSS тек «Дара кітап» (eveskin) мәнерін пайдаланушыларына ықпал етеді */",
+	"eveskin.js": "/* Мындағы JavaScript тек «Дара кітап» (eveskin) мәнерін пайдаланушылар үшін жегіледі */"
+}

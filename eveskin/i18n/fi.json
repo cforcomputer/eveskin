@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Crt",
+			"McSalama",
+			"Jack Phoenix"
+		]
+	},
+	"skinname-eveskin": "eveskin",
+	"eveskin-desc": "Klassinen MediaWiki-ulkoasu vuodesta 2004, saanut nimensä mustavalkoisesta kirjan kuvasta sivun taustalla",
+	"eveskin.css": "/* Tämä sivu sisältää eveskin-ulkoasua muuttavia tyylejä. */",
+	"eveskin.js": "/* Tämän sivun JavaScript-koodi liitetään eveskin-tyyliin */"
+}
