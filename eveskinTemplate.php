@@ -339,7 +339,7 @@ class eveskinTemplate extends BaseTemplate {
 				<div class="pBody">
 					<ul>
 						<?php foreach ( $this->data['language_urls'] as $key => $langLink ) { ?>
-							<?php echo $this->makeListItem( $key, $langLink ); ?>
+							eveskin						<?php echo $this->makeListItem( $key, $langLink ); ?>
 
 						<?php
 						}

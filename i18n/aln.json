@@ -4,6 +4,6 @@
 			"Bresta"
 		]
 	},
-	"eveskin.css": "/* CSS i vednosun këtu ka me i prekë shfrytëzuesit e dukjes Monobook */",
-	"eveskin.js": "/* Çdo JavaScript këtu ka me u ngarkue për shfrytëzuesit që përdorin dukjen MonoBook */"
+	"eveskin.css": "/* CSS i vednosun këtu ka me i prekë shfrytëzuesit e dukjes eveskin */",
+	"eveskin.js": "/* Çdo JavaScript këtu ka me u ngarkue për shfrytëzuesit që përdorin dukjen eveskin */"
 }
