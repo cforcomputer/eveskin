@@ -27,7 +27,7 @@
 /**
  * @ingroup Skins
  */
-class MonoBookTemplate extends BaseTemplate {
+class eveskinTemplate extends BaseTemplate {
 
 	/**
 	 * Template filter callback for MonoBook skin.
@@ -106,7 +106,7 @@ class MonoBookTemplate extends BaseTemplate {
 					<div class="visualClear"></div>
 				</div>
 			</div>
-			<?php Hooks::run( 'MonoBookAfterContent' ); ?>
+			<?php Hooks::run( 'eveskinAfterContent' ); ?>
 		</div>
 		<div id="column-one"<?php $this->html( 'userlangattributes' ) ?>>
 			<h2><?php $this->msg( 'navigation-heading' ) ?></h2>
@@ -319,7 +319,7 @@ class MonoBookTemplate extends BaseTemplate {
 					}
 					// Avoid PHP 7.1 warnings
 					$skin = $this;
-					Hooks::run( 'MonoBookTemplateToolboxEnd', [ &$skin ] );
+					Hooks::run( 'eveskinTemplateToolboxEnd', [ &$skin ] );
 					Hooks::run( 'SkinTemplateToolboxEnd', [ &$skin, true ] );
 					?>
 				</ul>
@@ -327,7 +327,7 @@ class MonoBookTemplate extends BaseTemplate {
 			</div>
 		</div>
 	<?php
-		Hooks::run( 'MonoBookAfterToolbox' );
+		Hooks::run( 'eveskinAfterToolbox' );
 	}
 
 	function languageBox() {
