@@ -6,8 +6,8 @@
 			"Mormegil"
 		]
 	},
-	"skinname-eveskin": "eveskin",
-	"eveskin-desc": "Klasický vzhled MediaWiki od roku 2004, pojmenovaný po černobílé fotografii knihy v pozadí stránky",
-	"eveskin.css": "/* Zde uvedené CSS bude ovlivňovat pouze styl „eveskin“ */",
-	"eveskin.js": "/* JavaScript pro uživatele používající vzhled eveskin */"
+	"skinname-monobook": "MonoBook",
+	"monobook-desc": "Klasický vzhled MediaWiki od roku 2004, pojmenovaný po černobílé fotografii knihy v pozadí stránky",
+	"monobook.css": "/* Zde uvedené CSS bude ovlivňovat pouze styl „Monobook“ */",
+	"monobook.js": "/* JavaScript pro uživatele používající vzhled MonoBook */"
 }

@@ -1,5 +1,5 @@
 {
 	"@metadata": [],
-	"skinname-eveskin": "eveskin",
-	"eveskin.css": "/* eveskin temasınıñ ayarlarını (nastroykalarını) deñiştirmek içün bu yerini deñiştiriñiz. Bütün saytta tesirli olur. */"
+	"skinname-monobook": "MonoBook",
+	"monobook.css": "/* monobook temasınıñ ayarlarını (nastroykalarını) deñiştirmek içün bu yerini deñiştiriñiz. Bütün saytta tesirli olur. */"
 }

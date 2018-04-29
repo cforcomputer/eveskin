@@ -4,8 +4,8 @@
 			"Robby"
 		]
 	},
-	"skinname-eveskin": "eveskin",
-	"eveskin-desc": "De klassesche Look vu MediaWiki zanter 2004, benannt no der Schwaarzwäissfoto vun engem Buch am Hannergrond vun der Säit",
-	"eveskin.css": "/* Dës CSS huet nëmmen Afloss op de Skin ''eveskin''  */",
-	"eveskin.js": "/* All JavaScript hei gëtt gelueden esoubal ee Benotzer d'Ausgesinn eveskin benotzt */"
+	"skinname-monobook": "MonoBook",
+	"monobook-desc": "De klassesche Look vu MediaWiki zanter 2004, benannt no der Schwaarzwäissfoto vun engem Buch am Hannergrond vun der Säit",
+	"monobook.css": "/* Dës CSS huet nëmmen Afloss op de Skin ''Monobook''  */",
+	"monobook.js": "/* All JavaScript hei gëtt gelueden esoubal ee Benotzer d'Ausgesinn MonoBook benotzt */"
 }

@@ -4,7 +4,7 @@
 			"Michawiki"
 		]
 	},
-	"skinname-eveskin": "eveskin",
-	"eveskin.css": "/* CSS wobdźěłać, zo by so skin „eveskin” za wšěčh wužiwarjow tutoho skina priměrił */",
-	"eveskin.js": "/* Slědowacy JavaScript začita so za wužiwarjow, kotřiž šat eveskin wužiwaja */"
+	"skinname-monobook": "MonoBook",
+	"monobook.css": "/* CSS wobdźěłać, zo by so skin „monobook” za wšěčh wužiwarjow tutoho skina priměrił */",
+	"monobook.js": "/* Slědowacy JavaScript začita so za wužiwarjow, kotřiž šat MonoBook wužiwaja */"
 }

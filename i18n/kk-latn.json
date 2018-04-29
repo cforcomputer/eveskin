@@ -1,6 +1,6 @@
 {
 	"@metadata": [],
-	"skinname-eveskin": "Dara kitap (eveskin)",
-	"eveskin.css": "/* Mında ornalastırılğan CSS tek «Dara kitap» (eveskin) mänerin paýdalanwşılarına ıqpal etedi */",
-	"eveskin.js": "/* Mındağı JavaScript tek «Dara kitap» (eveskin) mänerin paýdalanwşılar üşin jegiledi */"
+	"skinname-monobook": "Dara kitap (monobook)",
+	"monobook.css": "/* Mında ornalastırılğan CSS tek «Dara kitap» (monobook) mänerin paýdalanwşılarına ıqpal etedi */",
+	"monobook.js": "/* Mındağı JavaScript tek «Dara kitap» (monobook) mänerin paýdalanwşılar üşin jegiledi */"
 }

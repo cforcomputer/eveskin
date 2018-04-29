@@ -4,7 +4,7 @@
 			"Fulup"
 		]
 	},
-	"skinname-eveskin": "eveskin",
-	"eveskin.css": "/* Talvezout a raio ar CSS lakaet amañ evit implijerien ar gwiskadur eveskin */",
-	"eveskin.js": "/* Kement JavaScript amañ a vo karget evit an implijerien a ra gant ar gwiskadur eveskin */"
+	"skinname-monobook": "MonoBook",
+	"monobook.css": "/* Talvezout a raio ar CSS lakaet amañ evit implijerien ar gwiskadur Monobook */",
+	"monobook.js": "/* Kement JavaScript amañ a vo karget evit an implijerien a ra gant ar gwiskadur MonoBook */"
 }

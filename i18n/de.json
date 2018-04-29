@@ -6,8 +6,8 @@
 			"Kghbln"
 		]
 	},
-	"skinname-eveskin": "eveskin",
-	"eveskin-desc": "Stellt eine klassische Benutzeroberfläche bereit",
-	"eveskin.css": "/* Das folgende CSS wird für Benutzer der Benutzeroberfläche eveskin geladen */",
-	"eveskin.js": "/* Das folgende JavaScript wird für Benutzer der Benutzeroberfläche eveskin geladen. */"
+	"skinname-monobook": "MonoBook",
+	"monobook-desc": "Stellt eine klassische Benutzeroberfläche bereit",
+	"monobook.css": "/* Das folgende CSS wird für Benutzer der Benutzeroberfläche MonoBook geladen */",
+	"monobook.js": "/* Das folgende JavaScript wird für Benutzer der Benutzeroberfläche MonoBook geladen. */"
 }

@@ -1,30 +1,32 @@
 {
-	"name": "eveskin",
+	"name": "Eveskin",
+	"version":"1.0",
 	"author": [
 		"Gabriel Wicke",
-		"Trevton"
+		"Trevton",
+		"..."
 	],
-	"url": "https://www.mediawiki.org/wiki/Skin:eveskin",
-	"descriptionmsg": "eveskin-desc",
-	"namemsg": "skinname-eveskin",
+	"url": "https://www.mediawiki.org/wiki/Skin:Eveskin",
+	"descriptionmsg": "Eveskin for mediawiki",
+	"namemsg": "skinname-Eveskin",
 	"license-name": "GPL-2.0+",
 	"type": "skin",
 	"requires": {
 		"MediaWiki": ">= 1.25.0"
 	},
 	"ValidSkinNames": {
-		"eveskin": "eveskin"
+		"monobook": "MonoBook"
 	},
 	"SkinOOUIThemes": {
-		"eveskin": "Apex"
+		"monobook": "Apex"
 	},
 	"MessagesDirs": {
-		"eveskin": [
+		"MonoBook": [
 			"i18n"
 		]
 	},
 	"ResourceModules": {
-		"skins.eveskin.styles": {
+		"skins.monobook.styles": {
 			"position": "top",
 			"styles": {
 				"main.css": {
@@ -35,18 +37,18 @@
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "",
-		"remoteSkinPath": "eveskin"
+		"remoteSkinPath": "MonoBook"
 	},
 	"ResourceModuleSkinStyles": {
-		"eveskin": {
+		"monobook": {
 			"+mediawiki.action.view.redirectPage": "skinStyles/mediawiki.action.view.redirectPage.css",
 			"+mediawiki.special.preferences.styles": "skinStyles/mediawiki.special.preferences.styles.less",
 			"+mediawiki.notification": "skinStyles/mediawiki.notification.less"
 		}
 	},
 	"AutoloadClasses": {
-		"Skineveskin": "Skineveskin.php",
-		"eveskinTemplate": "eveskinTemplate.php"
+		"SkinMonoBook": "SkinMonoBook.php",
+		"MonoBookTemplate": "MonoBookTemplate.php"
 	},
 	"manifest_version": 1
 }

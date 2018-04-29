@@ -4,5 +4,5 @@
 			"Dbl2010"
 		]
 	},
-	"eveskin.css": "/* Buraya konulacak CSS kodu tüm eveskin teması kullanan tüm kullanıcılarda etkin olur */"
+	"monobook.css": "/* Buraya konulacak CSS kodu tüm Monobook teması kullanan tüm kullanıcılarda etkin olur */"
 }

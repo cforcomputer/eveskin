@@ -5,7 +5,7 @@
 			"Vugar 1981"
 		]
 	},
-	"skinname-eveskin": "eveskin",
-	"eveskin.css": "/* Burada yerləşən CSS eveskin skin istifadəçilərinə tətbiq olunur */",
-	"eveskin.js": "/* Burada eveskin skin istifadəçiləri üçün istənilən JavaScript yüklənəcək */"
+	"skinname-monobook": "MonoBook",
+	"monobook.css": "/* Burada yerləşən CSS Monobook skin istifadəçilərinə tətbiq olunur */",
+	"monobook.js": "/* Burada MonoBook skin istifadəçiləri üçün istənilən JavaScript yüklənəcək */"
 }

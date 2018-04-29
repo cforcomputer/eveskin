@@ -4,6 +4,6 @@
 			"Ibou"
 		]
 	},
-	"eveskin.css": "/* CSS yiñ def fii dañuy am ay njeexit ci jëfandikukatu col gu eveskin. */",
-	"eveskin.js": "/*Bépp JavaScript buñ fi duggal jëfandikukat yiy jëfandikoo col gu eveskin keppa koy yeb. */"
+	"monobook.css": "/* CSS yiñ def fii dañuy am ay njeexit ci jëfandikukatu col gu Monobook. */",
+	"monobook.js": "/*Bépp JavaScript buñ fi duggal jëfandikukat yiy jëfandikoo col gu Monobook keppa koy yeb. */"
 }

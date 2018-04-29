@@ -1,18 +1,18 @@
 Hooks provided by the MonoBook skin.
 
-'eveskinAfterContent': Called after div#content has been closed but right
+'MonoBookAfterContent': Called after div#content has been closed but right
 before div#column-content is closed. You can use this to inject items (such as
 ads, for example) from an extension.
 
-'eveskinAfterToolbox': Called in toolbox() after the toolbox portlet (div#p-tb)
+'MonoBookAfterToolbox': Called in toolbox() after the toolbox portlet (div#p-tb)
 has been generated. You can use this to inject items (such as ads or a hit
 counter, for example) from an extension.
-This is the eveskin couterpart to the VectorAfterToolbox hook in the Vector
+This is the MonoBook couterpart to the VectorAfterToolbox hook in the Vector
 skin.
 
-'eveskinTemplateToolboxEnd': DEPRECATED. Called by eveskin skin after toolbox
+'MonoBookTemplateToolboxEnd': DEPRECATED. Called by Monobook skin after toolbox
 links have been rendered (useful for adding more). Note: this is only run for
-the eveskinTemplateToolboxEnd skin. To add items to the toolbox you should use the
+the Monobook skin. To add items to the toolbox you should use the
 SkinTemplateToolboxEnd hook instead, which works for all "SkinTemplate"-type
 skins.
 $tools: array of tools

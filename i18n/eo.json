@@ -4,7 +4,7 @@
 			"Objectivesea"
 		]
 	},
-	"skinname-eveskin": "Librejo",
-	"eveskin.css": "/* La jena CSS influos la paĝaspekton por uzantoj de la Libreja temo. */",
-	"eveskin.js": "/* La jena Ĝavaskripto ŝargiĝos por uzantoj de la Libreja temo. */"
+	"skinname-monobook": "Librejo",
+	"monobook.css": "/* La jena CSS influos la paĝaspekton por uzantoj de la Libreja temo. */",
+	"monobook.js": "/* La jena Ĝavaskripto ŝargiĝos por uzantoj de la Libreja temo. */"
 }

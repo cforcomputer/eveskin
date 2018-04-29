@@ -1,5 +1,5 @@
 {
 	"@metadata": [],
-	"eveskin.css": "/* 个首𠮶 CSS 会碍到正用Monobook皮肤𠮶用户 */",
-	"eveskin.js": "/* 伓再使用；请用[[MediaWiki:common.js]] */"
+	"monobook.css": "/* 个首𠮶 CSS 会碍到正用Monobook皮肤𠮶用户 */",
+	"monobook.js": "/* 伓再使用；请用[[MediaWiki:common.js]] */"
 }

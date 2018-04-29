@@ -126,7 +126,7 @@
 		margin: 0;
 		margin-top: 55px;
 		margin-bottom: 3%;
-		background: url(/skins/eveskin/html-bg.jpg?12c36) top center no-repeat #000;
+		background: url(/skins/MonoBook/html-bg.jpg?12c36) top center no-repeat #000;
 		overflow-y: auto;
 		left: 0px;
 		top: 0px;
@@ -350,7 +350,7 @@
 	}
 
 	.portlet li:hover {
-		background: url(/skins/eveskin/pics/menu-arrow.png)  center right no-repeat transparent;
+		background: url(/skins/MonoBook/pics/menu-arrow.png)  center right no-repeat transparent;
 		background-position-x: -10px;	
 		overflow: visible;
 	}
@@ -416,7 +416,7 @@
 		position: absolute;
 		top: 16px;
 		right: -156px;
-		background: url(https://www.evelopedia.org/skins/eveskin/pics/searchIcon.jpg) center left no-repeat transparent;
+		background: url(https://www.evelopedia.org/skins/MonoBook/pics/searchIcon.jpg) center left no-repeat transparent;
 		border: transparent !important;
 		cursor: pointer;
 		color: transparent;
@@ -463,22 +463,30 @@
 	/*------------------------------------------------------------------*/
 	/*
 	** the personal toolbar
+	
 	*/
 		/* this is the ul contained in the portlet ----- this changes the logon area*/
+		#pt-anon_oauth_login {
+			background: url(https://www.evelopedia.org/skins/MonoBook/pics/eve-sso-login-white-small.png) center left no-repeat !important;
+			padding-top: 18px !important;
+			padding-bottom: 18px !important;
+			color: transparent !important;
+			
+	}
 	#p-personal {
 		position: absolute;
 		left: 0;
 		top: 0;
 		z-index: 3;
-		width: 100%;
+		width: 147%;
 		height: 100px;
 		margin: -110px auto; /*this makes it break out of body*/
 		border: 0px;
 		overflow: hidden;
 		line-height: 1.2em;
-		margin-left: -50%;
+		margin-left: -123%;
 		margin-right: 0;
-		padding-right: 100%;
+		padding-right: 245%;
 	}
 	
 	#p-personal h3 {
@@ -634,7 +642,7 @@
 	#p-cactions li.selected a {
 		z-index: 3;
 		background-color: #272727;
-		padding-bottom: 12px;
+		padding-bottom: 13px;
 	
 	}
 	
@@ -1490,7 +1498,7 @@ li#pt-login{
 
 li#n-EVElopedia-Home:hover {
 	color:white !important;
-	background: url(/skins/eveskin/pics/menu-arrow.png)  center left no-repeat transparent; 
+	background: url(/skins/MonoBook/pics/menu-arrow.png)  center left no-repeat transparent; 
 }
 #profile-toggle-button a:hover,
 li#pt-userpage:hover,

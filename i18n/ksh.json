@@ -4,8 +4,8 @@
 			"Purodha"
 		]
 	},
-	"skinname-eveskin": "Monobohch",
-	"eveskin-desc": "De klaßesche Bedehnbovverfläsch vum MehdijaWikki zigg 2004. Se es noh däm eijnfarbesch jroue Bohch benannt, wat doh als Hengerjrondbeld bei es.",
-	"eveskin.css": "/* Dat CSS heh aan dä Stell wirrek blohß op de Bedehnbovverflääsch „Monobohch“ */",
-	"eveskin.js": "/* De JavaSkrippte fun heh krejje alle Sigge met dä Bedehnbovverflääsch „Monobohch“ jescheck */"
+	"skinname-monobook": "Monobohch",
+	"monobook-desc": "De klaßesche Bedehnbovverfläsch vum MehdijaWikki zigg 2004. Se es noh däm eijnfarbesch jroue Bohch benannt, wat doh als Hengerjrondbeld bei es.",
+	"monobook.css": "/* Dat CSS heh aan dä Stell wirrek blohß op de Bedehnbovverflääsch „Monobohch“ */",
+	"monobook.js": "/* De JavaSkrippte fun heh krejje alle Sigge met dä Bedehnbovverflääsch „Monobohch“ jescheck */"
 }

@@ -4,5 +4,5 @@
 			"Krinkle"
 		]
 	},
-	"eveskin.css": "/* CSS placed here will affect users of the eveskin skin */"
+	"monobook.css": "/* CSS placed here will affect users of the Monobook skin */"
 }
