@@ -15,19 +15,31 @@
 		"MediaWiki": ">= 1.25.0"
 	},
 	"ValidSkinNames": {
-		"monobook": "MonoBook"
+		"eveskin": {
+			"class": "SkinTemplate",
+			"args": [
+				{
+					"name": "eveskin",
+					"template": "EveTemplate",
+					"styles": [
+						"mediawiki.skinning.interface",
+						"mediawiki.skinning.content.externallinks",
+						"skins.eve.styles"
+					]
+				}
+			]
+		}
 	},
 	"SkinOOUIThemes": {
-		"monobook": "Apex"
+		"eveskin": "Apex"
 	},
 	"MessagesDirs": {
-		"MonoBook": [
+		"eveskin": [
 			"i18n"
 		]
 	},
 	"ResourceModules": {
-		"skins.monobook.styles": {
-			"position": "top",
+		"skins.eve.styles": {
 			"styles": {
 				"main.css": {
 					"media": "screen"
@@ -35,20 +47,28 @@
 			}
 		}
 	},
+	"ConfigRegistry": {
+		"eveskin": "GlobalVarConfig::newInstance"
+	},
+	"config": {
+		"EveUseTwoButtonsSearchForm": {
+			"value": false,
+			"description": ""
+		}
+	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "",
-		"remoteSkinPath": "MonoBook"
+		"remoteSkinPath": "eveskin"
 	},
 	"ResourceModuleSkinStyles": {
-		"monobook": {
+		"eveskin": {
 			"+mediawiki.action.view.redirectPage": "skinStyles/mediawiki.action.view.redirectPage.css",
 			"+mediawiki.special.preferences.styles": "skinStyles/mediawiki.special.preferences.styles.less",
 			"+mediawiki.notification": "skinStyles/mediawiki.notification.less"
 		}
 	},
 	"AutoloadClasses": {
-		"SkinMonoBook": "SkinMonoBook.php",
-		"MonoBookTemplate": "MonoBookTemplate.php"
+		"EveTemplate": "EveTemplate.php"
 	},
 	"manifest_version": 1
 }

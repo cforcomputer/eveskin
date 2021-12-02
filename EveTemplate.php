@@ -1,6 +1,6 @@
 <?php
 /**
- * MonoBook nouveau.
+ * Eve skin, is based on the Monobook skin.
  *
  * Translated from gwicke's previous TAL template version to remove
  * dependency on PHPTAL.
@@ -27,7 +27,7 @@
 /**
  * @ingroup Skins
  */
-class MonoBookTemplate extends BaseTemplate {
+class EveTemplate extends BaseTemplate {
 
 	/**
 	 * Template filter callback for MonoBook skin.
@@ -124,7 +124,7 @@ class MonoBookTemplate extends BaseTemplate {
 							unset( $personalTools['uls'] );
 						}
 
-						if ( !$this->getSkin()->getUser()->isLoggedIn() &&
+						if ( $this->getSkin()->getUser()->isAnon() &&
 							User::groupHasPermission( '*', 'edit' )
 						) {
 							echo Html::rawElement( 'li', [
@@ -258,7 +258,7 @@ class MonoBookTemplate extends BaseTemplate {
 						[ 'id' => 'searchGoButton', 'class' => 'searchButton' ]
 					);
 
-					if ( $this->config->get( 'UseTwoButtonsSearchForm' ) ) {
+					if ( $this->config->get( 'EveUseTwoButtonsSearchForm' ) ) {
 						?>&#160;
 						<?php echo $this->makeSearchButton(
 							'fulltext',
@@ -360,7 +360,7 @@ class MonoBookTemplate extends BaseTemplate {
 	function customBox( $bar, $cont ) {
 		$portletAttribs = [
 			'class' => 'generated-sidebar portlet',
-			'id' => Sanitizer::escapeId( "p-$bar" ),
+			'id' => Sanitizer::escapeIdForAttribute( "p-$bar" ),
 			'role' => 'navigation'
 		];
 
