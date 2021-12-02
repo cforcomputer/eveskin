@@ -157,7 +157,19 @@ class EveTemplate extends BaseTemplate {
 		</div><!-- end of the left (by default at least) column -->
 		<div class="visualClear"></div>
 		<?php
-		$validFooterIcons = $this->getFooterIcons( 'icononly' );
+		$footericons = $this->get('footericons');
+		foreach ( $footericons as $footerIconsKey => &$footerIconsBlock ) {
+			foreach ( $footerIconsBlock as $footerIconKey => $footerIcon ) {
+					if ( !is_string( $footerIcon ) && !isset( $footerIcon['src'] ) ) {
+							unset( $footerIconsBlock[$footerIconKey] );
+					}
+			}
+			if ( $footerIconsBlock === [] ) {
+					unset( $footericons[$footerIconsKey] );
+			}
+		}
+
+		$validFooterIcons = $footericons;
 		// Additional footer links
 		$validFooterLinks = $this->getFooterLinks( 'flat' );
 
@@ -274,7 +286,7 @@ class EveTemplate extends BaseTemplate {
 
 				</form>
 
-				<?php $this->renderAfterPortlet( 'search' ); ?>
+				<?php echo $this->getSkin()->getAfterPortlet( 'search' ); ?>
 			</div>
 		</div>
 	<?php
@@ -297,13 +309,14 @@ class EveTemplate extends BaseTemplate {
 					} ?>
 
 				</ul>
-				<?php $this->renderAfterPortlet( 'cactions' ); ?>
+				<?php echo $this->getSkin()->getAfterPortlet( 'cactions' ); ?>
 			</div>
 		</div>
 	<?php
 	}
 
 	function toolbox() {
+		$theToolbox = $this->data['sidebar']['TOOLBOX'] ?? [];
 		?>
 		<div class="portlet" id="p-tb" role="navigation">
 			<h3><?php $this->msg( 'toolbox' ) ?></h3>
@@ -311,7 +324,7 @@ class EveTemplate extends BaseTemplate {
 			<div class="pBody">
 				<ul>
 					<?php
-					foreach ( $this->getToolbox() as $key => $tbitem ) {
+					foreach ( $theToolbox as $key => $tbitem ) {
 						?>
 						<?php echo $this->makeListItem( $key, $tbitem ); ?>
 
@@ -323,11 +336,10 @@ class EveTemplate extends BaseTemplate {
 					Hooks::run( 'SkinTemplateToolboxEnd', [ &$skin, true ] );
 					?>
 				</ul>
-				<?php $this->renderAfterPortlet( 'tb' ); ?>
+				<?php echo $this->getSkin()->getAfterPortlet( 'tb' ); ?>
 			</div>
 		</div>
 	<?php
-		Hooks::run( 'MonoBookAfterToolbox' );
 	}
 
 	function languageBox() {
@@ -346,7 +358,7 @@ class EveTemplate extends BaseTemplate {
 						?>
 					</ul>
 
-					<?php $this->renderAfterPortlet( 'lang' ); ?>
+					<?php echo $this->getSkin()->getAfterPortlet( 'lang' ); ?>
 				</div>
 			</div>
 		<?php
@@ -393,7 +405,7 @@ class EveTemplate extends BaseTemplate {
 				print $cont;
 			}
 
-			$this->renderAfterPortlet( $bar );
+			echo $this->getSkin()->getAfterPortlet( $bar );
 			?>
 		</div>
 		</div>

@@ -22,8 +22,6 @@
 					"name": "eveskin",
 					"template": "EveTemplate",
 					"styles": [
-						"mediawiki.skinning.interface",
-						"mediawiki.skinning.content.externallinks",
 						"skins.eve.styles"
 					]
 				}
@@ -40,7 +38,16 @@
 	},
 	"ResourceModules": {
 		"skins.eve.styles": {
+			"class": "ResourceLoaderSkinModule",
+			"features": {
+				"content-media": true,
+				"content-links": true,
+				"elements": true,
+				"interface": true,
+				"logo": true
+			},
 			"styles": {
+				"legacy.css": true,
 				"main.css": {
 					"media": "screen"
 				}
