@@ -43,6 +43,7 @@
 				"content-media": true,
 				"content-links": true,
 				"elements": true,
+				"logo": true,
 				"interface": true
 			},
 			"styles": {

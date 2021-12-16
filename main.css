@@ -198,10 +198,10 @@
 	
 	#firstHeading {
 		padding-top: 0;
-		padding-bottom: 35px;
+		padding-bottom: 50px;
 		overflow: inherit;
 		font-size: 13pt;
-		margin-top: 20px;
+		margin-top: 26px;
 	}
 	/*
 	.firstHeading {
@@ -232,7 +232,9 @@
 	/*
 	** the main content area
 	*/
-
+	.mw-body-content {
+		padding-top: 60px;
+	}
 
 	#siteNotice {
 		font-size: 95%;
@@ -588,7 +590,7 @@
 
 	#p-cactions {
 		position: absolute;
-    	top: 35px;
+		top: 55px;
     	margin: 0;
     	white-space: nowrap;
     	overflow: inherit;
@@ -941,11 +943,11 @@
 	#column-content #content { margin-left: 15em; }
 	/*how much logo is showing*/
 	#p-logo a, #p-logo a:hover { 
-		width: 25em;
-    	z-index: 3;
-    	height: 4em;
-		margin-top: -98%;
-		margin-left: 13%;
+		width: 187.5px;
+		z-index: 3;
+		height: 44px;
+		margin-top: -34px;
+		margin-left: 0px;
 	}
 	#p-cactions { left: 14.5em; }
 	.portlet { width: 187.5px; }
