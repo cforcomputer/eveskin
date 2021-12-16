@@ -50,7 +50,8 @@
 				"legacy.css": true,
 				"main.css": {
 					"media": "screen"
-				}
+				},
+				"a11y.less": true
 			}
 		}
 	},

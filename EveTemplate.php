@@ -112,9 +112,24 @@ class EveTemplate extends BaseTemplate {
 			<h2><?php $this->msg( 'navigation-heading' ) ?></h2>
 			<?php $this->cactions(); ?>
 			<div class="portlet" id="p-personal" role="navigation">
+				<?php
+				$logos = ResourceLoaderSkinModule::getAvailableLogos( $this->getSkin()->getConfig() );
+				$wordmark = $logos[ 'wordmark' ]['src'] ?? null;
+				?>
 				<h3><?php $this->msg( 'personaltools' ) ?></h3>
 
 				<div class="pBody">
+					<?php
+						echo Html::rawElement( 'a', [
+							'href' => $this->data['nav_urls']['mainpage']['href'],
+							'class' => 'eve-logo',
+						]
+						+ Linker::tooltipAndAccesskeyAttribs( 'p-logo' ),
+						$wordmark ? Html::element( 'img', [
+							'src' => $wordmark
+						] ) : ''
+						);
+					?>
 					<ul<?php $this->html( 'userlangattributes' ) ?>>
 						<?php
 						$personalTools = $this->getPersonalTools();
@@ -140,16 +155,6 @@ class EveTemplate extends BaseTemplate {
 						?>
 					</ul>
 				</div>
-			</div>
-			<div class="portlet" id="p-logo" role="banner">
-				<?php
-				echo Html::element( 'a', [
-						'href' => $this->data['nav_urls']['mainpage']['href'],
-						'class' => 'mw-wiki-logo',
-					]
-					+ Linker::tooltipAndAccesskeyAttribs( 'p-logo' )
-				); ?>
-
 			</div>
 			<?php
 			$this->renderPortals( $this->data['sidebar'] );
