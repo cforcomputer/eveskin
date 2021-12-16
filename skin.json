@@ -43,8 +43,7 @@
 				"content-media": true,
 				"content-links": true,
 				"elements": true,
-				"interface": true,
-				"logo": true
+				"interface": true
 			},
 			"styles": {
 				"legacy.css": true,
@@ -69,6 +68,7 @@
 	},
 	"ResourceModuleSkinStyles": {
 		"eveskin": {
+			"+ext.echo.styles.badge": "skinStyles/ext.echo.styles.badge.less",
 			"+mediawiki.action.view.redirectPage": "skinStyles/mediawiki.action.view.redirectPage.css",
 			"+mediawiki.special.preferences.styles": "skinStyles/mediawiki.special.preferences.styles.less",
 			"+mediawiki.notification": "skinStyles/mediawiki.notification.less"
