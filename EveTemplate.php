@@ -1,6 +1,6 @@
 <?php
 /**
- * MonoBook nouveau.
+ * Eve skin, is based on the Monobook skin.
  *
  * Translated from gwicke's previous TAL template version to remove
  * dependency on PHPTAL.
@@ -27,7 +27,7 @@
 /**
  * @ingroup Skins
  */
-class MonoBookTemplate extends BaseTemplate {
+class EveTemplate extends BaseTemplate {
 
 	/**
 	 * Template filter callback for MonoBook skin.
@@ -112,9 +112,24 @@ class MonoBookTemplate extends BaseTemplate {
 			<h2><?php $this->msg( 'navigation-heading' ) ?></h2>
 			<?php $this->cactions(); ?>
 			<div class="portlet" id="p-personal" role="navigation">
+				<?php
+				$logos = ResourceLoaderSkinModule::getAvailableLogos( $this->getSkin()->getConfig() );
+				$wordmark = $logos[ 'wordmark' ]['src'] ?? null;
+				?>
 				<h3><?php $this->msg( 'personaltools' ) ?></h3>
 
 				<div class="pBody">
+					<?php
+						echo Html::rawElement( 'a', [
+							'href' => $this->data['nav_urls']['mainpage']['href'],
+							'class' => 'eve-logo',
+						]
+						+ Linker::tooltipAndAccesskeyAttribs( 'p-logo' ),
+						$wordmark ? Html::element( 'img', [
+							'src' => $wordmark
+						] ) : ''
+						);
+					?>
 					<ul<?php $this->html( 'userlangattributes' ) ?>>
 						<?php
 						$personalTools = $this->getPersonalTools();
@@ -124,7 +139,7 @@ class MonoBookTemplate extends BaseTemplate {
 							unset( $personalTools['uls'] );
 						}
 
-						if ( !$this->getSkin()->getUser()->isLoggedIn() &&
+						if ( $this->getSkin()->getUser()->isAnon() &&
 							User::groupHasPermission( '*', 'edit' )
 						) {
 							echo Html::rawElement( 'li', [
@@ -141,23 +156,25 @@ class MonoBookTemplate extends BaseTemplate {
 					</ul>
 				</div>
 			</div>
-			<div class="portlet" id="p-logo" role="banner">
-				<?php
-				echo Html::element( 'a', [
-						'href' => $this->data['nav_urls']['mainpage']['href'],
-						'class' => 'mw-wiki-logo',
-					]
-					+ Linker::tooltipAndAccesskeyAttribs( 'p-logo' )
-				); ?>
-
-			</div>
 			<?php
 			$this->renderPortals( $this->data['sidebar'] );
 			?>
 		</div><!-- end of the left (by default at least) column -->
 		<div class="visualClear"></div>
 		<?php
-		$validFooterIcons = $this->getFooterIcons( 'icononly' );
+		$footericons = $this->get('footericons');
+		foreach ( $footericons as $footerIconsKey => &$footerIconsBlock ) {
+			foreach ( $footerIconsBlock as $footerIconKey => $footerIcon ) {
+					if ( !is_string( $footerIcon ) && !isset( $footerIcon['src'] ) ) {
+							unset( $footerIconsBlock[$footerIconKey] );
+					}
+			}
+			if ( $footerIconsBlock === [] ) {
+					unset( $footericons[$footerIconsKey] );
+			}
+		}
+
+		$validFooterIcons = $footericons;
 		// Additional footer links
 		$validFooterLinks = $this->getFooterLinks( 'flat' );
 
@@ -258,7 +275,7 @@ class MonoBookTemplate extends BaseTemplate {
 						[ 'id' => 'searchGoButton', 'class' => 'searchButton' ]
 					);
 
-					if ( $this->config->get( 'UseTwoButtonsSearchForm' ) ) {
+					if ( $this->config->get( 'EveUseTwoButtonsSearchForm' ) ) {
 						?>&#160;
 						<?php echo $this->makeSearchButton(
 							'fulltext',
@@ -274,7 +291,7 @@ class MonoBookTemplate extends BaseTemplate {
 
 				</form>
 
-				<?php $this->renderAfterPortlet( 'search' ); ?>
+				<?php echo $this->getSkin()->getAfterPortlet( 'search' ); ?>
 			</div>
 		</div>
 	<?php
@@ -297,13 +314,14 @@ class MonoBookTemplate extends BaseTemplate {
 					} ?>
 
 				</ul>
-				<?php $this->renderAfterPortlet( 'cactions' ); ?>
+				<?php echo $this->getSkin()->getAfterPortlet( 'cactions' ); ?>
 			</div>
 		</div>
 	<?php
 	}
 
 	function toolbox() {
+		$theToolbox = $this->data['sidebar']['TOOLBOX'] ?? [];
 		?>
 		<div class="portlet" id="p-tb" role="navigation">
 			<h3><?php $this->msg( 'toolbox' ) ?></h3>
@@ -311,7 +329,7 @@ class MonoBookTemplate extends BaseTemplate {
 			<div class="pBody">
 				<ul>
 					<?php
-					foreach ( $this->getToolbox() as $key => $tbitem ) {
+					foreach ( $theToolbox as $key => $tbitem ) {
 						?>
 						<?php echo $this->makeListItem( $key, $tbitem ); ?>
 
@@ -323,11 +341,10 @@ class MonoBookTemplate extends BaseTemplate {
 					Hooks::run( 'SkinTemplateToolboxEnd', [ &$skin, true ] );
 					?>
 				</ul>
-				<?php $this->renderAfterPortlet( 'tb' ); ?>
+				<?php echo $this->getSkin()->getAfterPortlet( 'tb' ); ?>
 			</div>
 		</div>
 	<?php
-		Hooks::run( 'MonoBookAfterToolbox' );
 	}
 
 	function languageBox() {
@@ -346,7 +363,7 @@ class MonoBookTemplate extends BaseTemplate {
 						?>
 					</ul>
 
-					<?php $this->renderAfterPortlet( 'lang' ); ?>
+					<?php echo $this->getSkin()->getAfterPortlet( 'lang' ); ?>
 				</div>
 			</div>
 		<?php
@@ -360,7 +377,7 @@ class MonoBookTemplate extends BaseTemplate {
 	function customBox( $bar, $cont ) {
 		$portletAttribs = [
 			'class' => 'generated-sidebar portlet',
-			'id' => Sanitizer::escapeId( "p-$bar" ),
+			'id' => Sanitizer::escapeIdForAttribute( "p-$bar" ),
 			'role' => 'navigation'
 		];
 
@@ -393,7 +410,7 @@ class MonoBookTemplate extends BaseTemplate {
 				print $cont;
 			}
 
-			$this->renderAfterPortlet( $bar );
+			echo $this->getSkin()->getAfterPortlet( $bar );
 			?>
 		</div>
 		</div>

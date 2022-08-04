@@ -128,6 +128,7 @@
 		margin-bottom: 3%;
 		background: url(/skins/MonoBook/html-bg.jpg?12c36) top center no-repeat #000;
 		overflow-y: auto;
+		overflow-x: hidden;
 		left: 0px;
 		top: 0px;
 		/*	-webkit-filter: blur(5px);
@@ -198,10 +199,10 @@
 	
 	#firstHeading {
 		padding-top: 0;
-		padding-bottom: 35px;
+		padding-bottom: 50px;
 		overflow: inherit;
 		font-size: 13pt;
-		margin-top: 20px;
+		margin-top: -10px;
 	}
 	/*
 	.firstHeading {
@@ -232,7 +233,9 @@
 	/*
 	** the main content area
 	*/
-
+	.mw-body-content {
+		padding-top: 60px;
+	}
 
 	#siteNotice {
 		font-size: 95%;
@@ -298,6 +301,11 @@
 			margin-top: 35px;
 	}
 	
+	#p-search,
+	#p-navigation {
+		margin-top: 0;
+	}
+
 	/*------------------------------------------------------------------*/
 	/* navigation sidebar settings */
 	/*this makes the titles blocky*/
@@ -353,35 +361,6 @@
 		background: url(/skins/MonoBook/pics/menu-arrow.png)  center right no-repeat transparent;
 		background-position-x: -10px;	
 		overflow: visible;
-	}
-	
-	/*------------------------------------------------------------------*/
-	/*
-	** Logo properties
-	*/
-	
-
-	#p-logo {
-		top: 0;
-		left: 0;
-		position: absolute; /*needed to use z-index */
-		z-index: 3;
-		height: 30px;
-		width: 12em;
-		overflow: inherit;
-		background: transparent !important;
-	}
-	
-	#p-logo h3 {
-		display: none;
-	}
-	
-	#p-logo a,
-	#p-logo a:hover {
-		display: block;
-		background-repeat: no-repeat;
-		background-position: 35% 50% !important; /* stylelint-disable-line declaration-no-important */
-		text-decoration: none;
 	}
 	
 	/*------------------------------------------------------------------*/
@@ -493,6 +472,15 @@
 		display: none;
 	
 	}
+
+	#p-personal .eve-logo {
+		filter: invert(1);
+		float: left;
+	}
+
+	#p-personal ul {
+		float: right;
+	}
 	
 	#p-personal .portlet,
 	
@@ -501,6 +489,7 @@
 		margin: 0;
 		/*overflow: visible;*/
 		display: table-row;
+		width: 1000px;
 		float: right;
 		margin-right: -53%; /*this changes the horizontal 1080direction of the logout// top buttons*/
 		margin-top: 12px;
@@ -588,7 +577,7 @@
 
 	#p-cactions {
 		position: absolute;
-    	top: 35px;
+		top: 5px;
     	margin: 0;
     	white-space: nowrap;
     	overflow: inherit;
@@ -941,11 +930,11 @@
 	#column-content #content { margin-left: 15em; }
 	/*how much logo is showing*/
 	#p-logo a, #p-logo a:hover { 
-		width: 25em;
-    	z-index: 3;
-    	height: 4em;
-		margin-top: -98%;
-		margin-left: 13%;
+		width: 187.5px;
+		z-index: 3;
+		height: 44px;
+		margin-top: -34px;
+		margin-left: 0px;
 	}
 	#p-cactions { left: 14.5em; }
 	.portlet { width: 187.5px; }
